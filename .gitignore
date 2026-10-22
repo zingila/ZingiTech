@@ -1,0 +1,11 @@
+# Brief interne : ne doit pas être publié (dépôt public GitHub Pages)
+context.md
+Context.md
+
+# Configuration locale de l'aperçu
+.claude/
+
+# Fichiers système
+Thumbs.db
+desktop.ini
+.DS_Store

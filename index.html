@@ -1,0 +1,1734 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZingiTech · Ingénierie logicielle, applications métiers et mobiles</title>
+<meta name="description" content="Ingénierie logicielle à Compiègne : applications métiers WinDev et HFSQL, applications mobiles React Native et IA. Disponible pour de nouvelles missions.">
+<link rel="canonical" href="https://zingitech.fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZingiTech · Des applications métiers fiables, des produits numériques qui vivent.">
+<meta property="og:description" content="Ingénierie logicielle, applications métiers WinDev, applications mobiles React Native et IA. Disponible pour de nouvelles missions en régie ou en portage.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://zingitech.fr/">
+<meta property="og:image" content="https://zingitech.fr/assets/og.jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="525">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -120 1120 720'%3E%3Crect x='-60' y='-120' width='1120' height='720' fill='%230a0a0b'/%3E%3Cpath fill='%23f4f2ed' d='M4,16L8,25L22,49L80,142L96,165L103,173L112,179L122,184L142,190L152,194L161,200L169,208L179,221L265,356L281,379L300,400L325,422L352,442L376,455L396,464L427,474L454,480L470,483L505,484L528,483L545,480L571,474L592,468L603,464L623,455L646,442L665,429L690,408L710,388L724,370L737,352L854,166L869,143L877,135L886,130L896,126L917,121L927,117L936,110L943,102L949,93L982,42L993,23L995,18L996,13L995,9L994,6L991,4L987,2L976,0L953,0L941,1L931,4L922,10L912,23L861,101L854,110L846,116L836,120L814,126L804,130L795,136L788,143L775,161L676,320L659,342L642,358L630,370L611,383L592,393L572,402L551,408L535,411L524,412L501,413L478,413L461,411L440,406L424,401L409,395L385,382L367,368L359,361L343,345L322,318L257,216L248,203L240,195L230,190L225,188L204,183L194,179L185,173L177,165L171,156L86,21L79,12L75,9L67,3L56,1L22,0L11,3L8,5L5,8L4,11ZM134,13L135,18L137,23L142,32L163,65L200,125L228,167L235,175L244,181L254,185L270,189L280,193L289,198L298,205L305,214L311,223L352,288L369,311L384,327L397,339L411,348L420,354L435,360L456,367L472,371L483,373L500,374L517,373L528,371L549,366L564,360L579,353L593,345L607,334L615,327L630,310L647,287L726,162L738,143L746,135L754,130L764,126L786,122L796,118L804,111L811,103L818,94L856,34L862,24L865,15L865,11L864,7L861,5L857,2L847,0L813,1L802,3L794,8L790,12L783,21L739,90L725,108L717,115L707,120L681,127L671,131L662,137L655,145L584,257L578,266L566,278L553,289L539,296L523,301L512,302L501,303L483,302L467,299L457,295L443,287L430,276L419,264L386,213L376,200L367,193L362,191L352,187L336,184L326,180L321,177L313,170L299,153L214,18L208,10L199,4L189,1L178,0L154,0L143,2L139,4L136,6L135,9ZM265,16L269,25L274,35L351,156L360,169L368,176L377,182L408,191L413,194L422,199L426,203L433,211L453,238L461,246L469,252L474,255L484,259L500,261L511,260L522,257L531,251L543,241L556,223L603,149L614,136L623,130L628,128L654,122L659,120L669,115L677,108L689,90L725,34L731,25L734,15L734,11L733,8L731,5L727,3L722,1L711,0L682,1L677,1L667,5L663,8L655,16L602,99L595,108L586,115L577,119L549,124L540,128L532,135L528,139L510,167L502,174L493,180L488,181L477,182L467,181L456,177L452,175L443,168L436,160L420,137L347,21L341,12L337,9L328,3L318,1L283,0L272,2L269,5L266,8L265,11Z'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"ZingiTech","url":"https://zingitech.fr/","image":"https://zingitech.fr/assets/og.jpg","description":"Ingénierie logicielle : applications métiers WinDev et bases de données, applications mobiles React Native et IA, sites e-commerce, data et automatisation.","email":"contact@zingitech.fr","address":{"@type":"PostalAddress","addressLocality":"Compiègne","addressRegion":"Hauts-de-France","addressCountry":"FR"},"founder":{"@type":"Person","name":"Brandon Z."},"foundingDate":"2026-03","areaServed":"FR"}
+</script>
+<style>
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:600 800;font-display:swap;src:url(assets/fonts/montserrat.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(assets/fonts/inter.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(assets/fonts/jetbrains-mono.woff2) format('woff2')}
+:root{--hostbar:0px;
+  --noir:#0a0a0b; --noir-2:#131316; --noir-3:#1c1c20;
+  --blanc:#f4f2ed; --blanc-2:#ebe8e0; --blanc-3:#dedad0;
+  --encre:#0e0e10; --gris:#66666b; --gris-2:#9a9aa0;
+  --ligne-s:rgba(14,14,16,.14); --ligne-n:rgba(255,255,255,.16);
+  --rouge:#ff6b6b; --vert:#5fe29c; --jaune:#ffd36b; --bleu:#86ccff;
+  --display:'Montserrat',system-ui,-apple-system,sans-serif;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:clamp(20px,4.5vw,72px); --max:1480px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.rv,.hero-txt>*,.hero h1 .ln>span,.sw .w>span,.hero-emb path{opacity:1!important;transform:none!important}}
+body{font-family:var(--sans);background:var(--noir);color:var(--blanc);line-height:1.55;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+::selection{background:var(--jaune);color:#0a0a0b}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+section{position:relative}
+.s-noir{background:var(--noir);color:var(--blanc);--gris:#a6a6ad}
+.s-blanc{background:var(--blanc);color:var(--encre);--gris-2:#62626a}
+.emb{display:block;fill:currentColor}
+.k{color:var(--bleu)}.s{color:var(--rouge)}.c{color:var(--vert)}.n,.f{color:var(--jaune)}.p{color:#8b8f99}.i,.v{color:#e6e6ea}
+.s-blanc .k{color:#1b6fb4}.s-blanc .s{color:#c43d3d}.s-blanc .c{color:#1f8a52}.s-blanc .n,.s-blanc .f{color:#a86f00}.s-blanc .p{color:#7a7a82}.s-blanc .i,.s-blanc .v{color:var(--encre)}
+.codecard .k,.pipe-code .k,.bpre .k,.strip .k,.code .k,.hl .k{color:var(--bleu)}.codecard .s,.pipe-code .s,.bpre .s,.strip .s,.code .s,.hl .s{color:var(--rouge)}.codecard .c,.pipe-code .c,.bpre .c,.strip .c,.code .c,.hl .c{color:var(--vert)}.codecard .n,.codecard .f,.pipe-code .n,.pipe-code .f,.bpre .n,.bpre .f,.strip .n,.strip .f,.code .n,.code .f,.hl .n,.hl .f{color:var(--jaune)}.codecard .p,.pipe-code .p,.bpre .p,.strip .p,.code .p,.hl .p{color:#8b8f99}.codecard .i,.codecard .v,.pipe-code .i,.bpre .i,.strip .i,.code .i,.code .v,.hl .i,.hl .v{color:#e6e6ea}
+.lbl{font:500 12px var(--mono);letter-spacing:.06em;color:var(--vert);display:flex;align-items:center;gap:12px}
+.s-blanc .lbl{color:#1f8a52}
+.lbl::after{content:"";height:1px;width:40px;background:currentColor;opacity:.5}
+
+/* ---------- barre de progression + nav ---------- */
+#prog{position:fixed;left:0;top:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--rouge),var(--jaune),var(--vert),var(--bleu));z-index:60;pointer-events:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px var(--pad);color:var(--blanc);transition:color .35s var(--ease),padding .35s var(--ease)}
+.nav[data-theme="blanc"]{color:var(--encre)}
+.nav.small{padding-top:10px;padding-bottom:10px}
+.nav::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .35s;background:rgba(10,10,11,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.nav[data-theme="blanc"]::before{background:rgba(244,242,237,.78)}
+.nav.small::before{opacity:1}
+.nav.small{background:rgba(10,10,11,.94)}
+.nav.small[data-theme="blanc"]{background:rgba(244,242,237,.94)}
+.brand{display:flex;align-items:center;gap:13px;flex:none}
+.brand .emb{height:22px;width:auto}
+.brand b{font-family:var(--display);font-weight:800;font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;padding-top:2px}
+.nav-links{display:flex;gap:26px;font-size:13.5px;font-weight:500;letter-spacing:.01em}
+.nav-links a{position:relative;padding:4px 0;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:0 50%;transition:transform .35s var(--ease)}
+.nav-links a:hover::after,.nav-links a.on::after{transform:scaleX(1)}
+.nav-right{display:flex;align-items:center;gap:12px;flex:none}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--vert);flex:none}
+.kbtn{display:inline-flex;align-items:center;gap:8px;font:500 12px var(--mono);letter-spacing:.04em;padding:8px 11px;border:1px solid currentColor;border-radius:8px;opacity:.7;transition:opacity .3s,transform .35s var(--ease);white-space:nowrap}
+.kbtn:hover{opacity:1}
+.kbtn kbd{font:inherit;padding:0 5px;border:1px solid currentColor;border-radius:4px;opacity:.75;line-height:1.5}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:14px;letter-spacing:.01em;border:1px solid currentColor;transition:transform .35s var(--ease),background .3s,color .3s,border-color .3s;white-space:nowrap;will-change:transform}
+.btn:hover{transform:translateY(-2px)}
+.btn-plein{background:var(--blanc);color:var(--encre);border-color:var(--blanc)}
+.btn-plein:hover{background:#fff}
+.s-blanc .btn-plein{background:var(--encre);color:var(--blanc);border-color:var(--encre)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.s-blanc .btn-ghost:hover{background:rgba(0,0,0,.05)}
+.nav .btn{padding:10px 18px;font-size:13px}
+.nav[data-theme="blanc"] .btn-plein{background:var(--encre);color:var(--blanc);border-color:var(--encre)}
+.burger{display:none;width:44px;height:44px;position:relative;margin-right:-8px}
+.burger i{position:absolute;left:11px;right:11px;height:2px;background:currentColor;top:16px;transition:transform .35s var(--ease),top .35s var(--ease),opacity .3s}
+.burger i+i{top:26px}
+.burger[aria-expanded="true"] i{top:21px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i+i{transform:rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:45;background:var(--noir);color:var(--blanc);display:none;flex-direction:column;justify-content:center;padding:var(--pad)}
+.menu.open{display:flex}
+.menu a{font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,52px);letter-spacing:-.03em;line-height:1.1;padding:5px 0;display:flex;align-items:baseline;gap:18px}
+.menu a span{font:500 12px var(--mono);letter-spacing:.1em;color:var(--gris-2)}
+.menu .menu-foot{margin-top:30px;font-size:14px;color:var(--gris-2)}
+@media (max-width:1100px){.nav .kbtn{display:none}}
+@media (max-width:980px){.nav-links,.nav .btn,.nav .kbtn{display:none}.burger{display:block}}
+
+/* ---------- barre d'état (bureau) ---------- */
+.status{position:fixed;left:0;right:0;bottom:var(--hostbar,0px);height:28px;z-index:48;display:flex;align-items:stretch;background:var(--noir);color:#a6a6ad;border-top:1px solid var(--ligne-n);font:500 11px var(--mono);letter-spacing:.04em;padding:0 var(--pad)}
+.status span{padding:0 14px;border-right:1px solid var(--ligne-n);display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.status span:first-child{padding-left:0}
+.status span:last-child{border-right:0;margin-left:auto;padding-right:0}
+.status .dot{width:7px;height:7px}
+.status em{font-style:normal;color:var(--blanc)}
+@media (min-width:981px){body{padding-bottom:calc(28px + var(--hostbar,0px))}}
+@media (max-width:980px){.status{display:none}}
+
+/* ---------- héros ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(55% 50% at 82% 28%,rgba(134,204,255,.09),transparent 65%),radial-gradient(45% 45% at 12% 85%,rgba(255,211,107,.07),transparent 65%)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(38% 46% at 74% 52%,rgba(134,204,255,.16),transparent 70%);opacity:0;transition:opacity 1.4s var(--ease)}
+.hero.pull .hero-bg::after{opacity:1}
+.hero.set .hero-bg::after{opacity:.45}
+.hero-grid{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:48px 56px;align-items:center;padding-top:118px;padding-bottom:40px}
+.hero-emb{width:min(176px,32vw);height:auto;fill:var(--blanc);overflow:visible;margin-bottom:34px}
+.hero-emb path{transform-box:fill-box;transform-origin:50% 50%}
+html.js .hero-emb path{opacity:0;animation:band 1.15s var(--ease) forwards}
+html.js .hero-emb .b1{--flash:var(--rouge);animation-delay:.12s}
+html.js .hero-emb .b2{--flash:var(--jaune);animation-delay:.34s}
+html.js .hero-emb .b3{--flash:var(--bleu);animation-delay:.56s}
+@keyframes band{0%{opacity:0;transform:translateY(-18%);fill:var(--flash)}40%{opacity:1;fill:var(--flash)}100%{opacity:1;transform:none;fill:var(--blanc)}}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(36px,4.6vw,68px);line-height:1.04;letter-spacing:-.035em;max-width:13ch}
+.hero h1 em{font-style:normal;color:#8a8985}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.hero h1 .ln>span{display:block}
+html.js .hero h1 .ln>span{transform:translateY(110%);transition:transform 1.05s var(--ease)}
+html.js .hero h1 .ln:nth-child(2)>span{transition-delay:.12s}
+html.js .hero.in h1 .ln>span{transform:none}
+.hero .lead{font-size:clamp(16px,1.25vw,18.5px);color:#c9c9cf;max-width:50ch;line-height:1.6;margin-top:26px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+html.js .hero .lead,html.js .hero .cta-row{opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease) .35s,transform .9s var(--ease) .35s}
+html.js .hero .cta-row{transition-delay:.5s}
+html.js .hero.in .lead,html.js .hero.in .cta-row{opacity:1;transform:none}
+.hero-fx{position:absolute;inset:0;z-index:3;pointer-events:none;display:block}
+html:not(.js) .hero-fx,html.noanim .hero-fx{display:none}
+.hero-ed{perspective:1400px;min-width:0}
+.win{border:1px solid var(--ligne-n);border-radius:14px;background:rgba(19,19,22,.88);height:min(560px,66vh);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 50px 100px -40px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.06);transform-origin:50% 50%;transition:transform .6s var(--ease),opacity 1s var(--ease),box-shadow 1s var(--ease)}
+.hero.set .win{transform:rotateY(var(--rx,0deg)) rotateX(var(--ry,0deg))}
+html.js .win{opacity:0;box-shadow:0 0 0 0 rgba(0,0,0,0)}
+html.js .hero.pull .win{opacity:1;box-shadow:0 50px 100px -40px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.06)}
+.win-cap{display:flex;justify-content:space-between;gap:16px;margin-top:12px;font:500 11.5px var(--mono);letter-spacing:.02em;color:var(--gris-2);white-space:nowrap;overflow:hidden}
+.win-cap span:last-child{overflow:hidden;text-overflow:ellipsis;transition:color .5s}
+.win-cap span.ok{color:var(--vert)}
+html.js .win-cap{opacity:0;transition:opacity 1s var(--ease) .3s}
+html.js .hero.pull .win-cap,html.noanim .win-cap{opacity:1}
+.win-bar{display:flex;align-items:center;gap:14px;padding:10px 14px 0;border-bottom:1px solid var(--ligne-n);background:rgba(255,255,255,.02)}
+.win-bar .dots{display:inline-flex;gap:6px;padding-bottom:10px}
+.win-bar .dots i{width:9px;height:9px;border-radius:50%;background:var(--rouge);display:block}
+.win-bar .dots i:nth-child(2){background:var(--jaune)}.win-bar .dots i:nth-child(3){background:var(--vert)}
+.editor-tabs{display:flex;gap:2px;font:500 11.5px var(--mono);letter-spacing:.04em;color:var(--gris-2);overflow:hidden;white-space:nowrap;min-width:0}
+.editor-tabs span{padding:7px 13px;border:1px solid var(--ligne-n);border-bottom:0;border-radius:8px 8px 0 0;background:rgba(255,255,255,.02);display:inline-flex;gap:8px;align-items:center;transition:color .3s,background .3s}
+.editor-tabs span.on{color:var(--blanc);background:rgba(255,255,255,.06)}
+.editor-tabs span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--jaune);opacity:.8}
+.editor-tabs span:nth-child(2)::before{background:var(--bleu)}
+.editor-tabs span:nth-child(3)::before{background:var(--vert)}
+.editor-tabs span:nth-child(4)::before{background:var(--rouge)}
+.code{font:400 12.5px/1.75 var(--mono);color:#d9d9dc;white-space:pre;flex:1;min-height:0;overflow:hidden;padding:12px 0 0;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 0,#000 82%,transparent 100%)}
+.code .l{display:flex;min-height:1.75em;transition:opacity .45s}
+.code .l.bye{opacity:0}
+.code .l .lc{transition:opacity .28s}
+.code .l.pre .lc{opacity:0}
+.code .ln{width:46px;flex:none;text-align:right;padding-right:16px;color:#4a4a52;user-select:none}
+.code .lc{overflow:hidden;text-overflow:ellipsis}
+.caret{display:inline-block;width:7px;height:1.15em;background:var(--blanc);vertical-align:-2px;margin-left:1px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.console{font:400 12px/1.4 var(--mono);color:var(--gris-2);min-height:46px;display:flex;gap:10px;align-items:center;padding:6px 16px;border-top:1px solid var(--ligne-n);overflow:hidden;background:rgba(0,0,0,.25)}
+.console .pr{color:var(--vert)}
+.console .ok{color:var(--blanc);min-width:0}
+.hero-foot{position:relative;z-index:2;width:100%;display:flex;justify-content:flex-end;align-items:center;gap:20px;padding-top:18px;padding-bottom:calc(50px + var(--hostbar,0px));border-top:1px solid var(--ligne-n)}
+.scroll-hint{font:500 11px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gris-2);display:flex;align-items:center;gap:10px;flex:none}
+.scroll-hint i{width:1px;height:28px;background:currentColor;position:relative;overflow:hidden;display:block}
+.scroll-hint i::after{content:"";position:absolute;left:0;top:-100%;width:100%;height:100%;background:var(--blanc);animation:drop 1.8s var(--ease) infinite}
+@keyframes drop{to{top:100%}}
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;padding-top:96px;padding-bottom:30px}
+  .hero-emb{width:min(130px,30vw);margin-bottom:24px}
+  .hero h1{font-size:clamp(32px,9.4vw,46px);max-width:none}
+  .hero .cta-row .btn{flex:1 1 100%;justify-content:center}
+  .win,.hero.set .win{height:360px;transform:none}
+  .hero-bg::after{background:radial-gradient(70% 30% at 50% 80%,rgba(134,204,255,.14),transparent 70%)}
+  .code{font-size:11.5px}.code .ln{width:34px;padding-right:10px}
+  .console{font-size:11.5px;padding:6px 14px}
+  .hero-foot{display:none}
+}
+
+/* ---------- bandeaux de code et chevrons ---------- */
+.strip{overflow:hidden;background:var(--noir);color:#c7c7cc;font:400 12px/1 var(--mono);padding:11px 0;border-top:1px solid var(--ligne-n);border-bottom:1px solid var(--ligne-n);white-space:nowrap}
+.strip-in{display:inline-block;animation:slide 60s linear infinite;will-change:transform}
+@keyframes slide{to{transform:translateX(-50%)}}
+.chev{height:clamp(22px,3.6vw,52px);background:var(--chev,var(--noir));clip-path:polygon(0 0,100% 0,50% 100%);pointer-events:none}
+.s-blanc>.chev{--chev:var(--noir)}
+.s-noir>.chev{--chev:var(--blanc)}
+
+/* ---------- blocs de section ---------- */
+.sec{padding-top:clamp(64px,8vw,112px);padding-bottom:clamp(64px,8vw,112px)}
+.h2{font-family:var(--display);font-weight:800;font-size:clamp(32px,4.4vw,62px);line-height:1.02;letter-spacing:-.035em;margin-top:18px}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px 64px;align-items:end;margin-bottom:clamp(40px,5.5vw,76px)}
+.sec-head p{font-size:clamp(16px,1.2vw,18px);color:var(--gris);max-width:52ch;line-height:1.6}
+.s-noir .sec-head p{color:#b9b9c0}
+@media (max-width:980px){.sec-head{grid-template-columns:1fr;gap:18px}}
+.sw .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.sw .w>span{display:inline-block}
+html.js .sw .w>span{transform:translateY(105%);transition:transform .9s var(--ease);transition-delay:calc(var(--i,0)*45ms)}
+html.js .in .sw .w>span{transform:none}
+.rv{opacity:1;transform:none}
+html.js .rv:not(.in){opacity:0;transform:translateY(26px)}
+html.js .rv{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+html.noanim .rv,html.noanim .sw .w>span,html.noanim .hero h1 .ln>span,html.noanim .hero .lead,html.noanim .hero .cta-row,html.noanim .win{opacity:1!important;transform:none!important}
+html.lock{overflow:hidden}
+.skip{position:absolute;left:-999px;top:10px;z-index:60;background:var(--blanc);color:var(--encre);padding:10px 14px;border-radius:8px;font-weight:600}
+.skip:focus{left:10px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--bleu);outline-offset:3px}
+.tag{font:500 11.5px var(--mono);letter-spacing:.04em;padding:6px 10px;border:1px solid var(--ligne-s);border-radius:6px;color:var(--encre);background:rgba(255,255,255,.4)}
+.s-noir .tag{border-color:var(--ligne-n);color:var(--blanc);background:rgba(255,255,255,.04)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+
+/* ---------- déclarations (chiffres) ---------- */
+.decl{padding-top:clamp(40px,5vw,66px);padding-bottom:clamp(44px,5vw,70px)}
+.decl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 32px}
+.decl-item code{display:block;font:400 clamp(12.5px,1vw,14px)/1.5 var(--mono);white-space:nowrap;color:var(--gris)}
+.decl-item b{font-family:var(--display);font-weight:800;font-size:clamp(44px,5vw,76px);letter-spacing:-.045em;line-height:1;display:block;margin-top:10px}
+.decl-item b sup{font-size:.42em;vertical-align:top;top:.3em;position:relative;letter-spacing:0;color:#1f8a52}
+.decl-item p{color:var(--gris);font-size:14px;margin-top:10px;max-width:22ch;line-height:1.5}
+@media (max-width:900px){.decl-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}}
+@media (max-width:640px){.decl-item code{white-space:normal;min-height:3em;font-size:12px}}
+
+/* ---------- services : explorateur ---------- */
+.ide{display:grid;grid-template-columns:236px minmax(0,1fr);border:1px solid var(--ligne-n);border-radius:16px;overflow:hidden;background:var(--noir-2);margin-top:30px;min-height:580px}
+.ide-tree{border-right:1px solid var(--ligne-n);padding:14px 10px 18px;background:#0f0f12;font:400 13px var(--mono);display:flex;flex-direction:column;gap:2px}
+.tree-h{font:500 10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gris-2);padding:8px 12px 12px}
+.tree-dir{color:var(--gris-2);padding:14px 12px 4px;font-size:12px}
+.tree-dir::before{content:"▾ ";opacity:.6}
+.tf{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:8px 12px;border-radius:8px;color:#c9c9cf;transition:background .25s,color .25s;white-space:nowrap}
+.tf.lvl{padding-left:24px}
+.tf:hover{background:rgba(255,255,255,.05);color:var(--blanc)}
+.tf.on{background:rgba(255,255,255,.09);color:var(--blanc)}
+.ic{width:8px;height:8px;border-radius:2px;background:var(--gris-2);flex:none}
+.ic.md{background:#e6e6ea}.ic.wl{background:var(--jaune)}.ic.ts{background:var(--bleu)}.ic.php{background:var(--rouge)}.ic.py{background:var(--vert)}.ic.txt{background:var(--gris-2)}
+.tree-foot{margin-top:auto;padding:16px 12px 0;font:400 11.5px/1.6 var(--mono);color:var(--gris-2)}
+.ide-main{display:flex;flex-direction:column;min-width:0}
+.ide-tabs{display:flex;border-bottom:1px solid var(--ligne-n);background:#0f0f12;overflow-x:auto;scrollbar-width:none}
+.ide-tabs::-webkit-scrollbar{display:none}
+.ide-tabs span{display:inline-flex;align-items:center;gap:10px;padding:11px 14px 11px 16px;font:500 12px var(--mono);color:var(--gris-2);border-right:1px solid var(--ligne-n);cursor:pointer;white-space:nowrap;transition:color .25s,background .25s;position:relative}
+.ide-tabs span.on{color:var(--blanc);background:var(--noir-2);box-shadow:inset 0 2px 0 var(--jaune)}
+.ide-tabs span b{font-weight:400;opacity:.45;padding:0 2px;line-height:1}
+.ide-tabs span b:hover{opacity:1}
+.ide-panes{position:relative;flex:1;padding:clamp(22px,3vw,44px)}
+.pane{display:none}
+.pane.on{display:block;animation:paneIn .5s var(--ease)}
+@keyframes paneIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.md h2{font-family:var(--display);font-weight:800;font-size:clamp(28px,3.3vw,46px);line-height:1.05;letter-spacing:-.035em;margin:6px 0 18px}
+.md>p{color:#c9c9cf;font-size:16px;max-width:60ch}
+.md .rows{margin-top:34px;border-top:1px solid var(--ligne-n)}
+.row{display:grid;grid-template-columns:54px minmax(0,1fr) minmax(0,1.25fr) auto;gap:16px 22px;align-items:start;padding:22px 0;border-bottom:1px solid var(--ligne-n);width:100%;text-align:left;transition:background .3s}
+.row .num{font:500 12px var(--mono);color:var(--jaune);letter-spacing:.1em;padding-top:5px}
+.row h3{font-family:var(--display);font-weight:700;font-size:clamp(18px,1.6vw,22px);line-height:1.2;letter-spacing:-.02em}
+.row p{color:#b9b9c0;font-size:14.5px;line-height:1.55}
+.row .tags{margin-top:12px}
+.row .go{font:500 12px var(--mono);color:var(--gris-2);white-space:nowrap;padding-top:5px;transition:color .3s,transform .3s var(--ease)}
+.row:hover .go{color:var(--blanc);transform:translateX(4px)}
+.svc-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 22px;margin-bottom:24px}
+.svc-h .num{font:500 12px var(--mono);color:var(--jaune);letter-spacing:.1em}
+.svc-h h3{font-family:var(--display);font-weight:700;font-size:clamp(24px,2.7vw,40px);line-height:1.05;letter-spacing:-.03em}
+.svc-h .tagl{font:500 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gris-2)}
+.svc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px 44px}
+.svc-txt p{color:#c9c9cf;font-size:16px;max-width:48ch}
+.svc-txt ul{margin-top:22px;display:grid;gap:10px}
+.svc-txt li{display:flex;gap:14px;font-size:15px;color:#e2e2e6;line-height:1.5}
+.svc-txt li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--jaune);margin-top:9px}
+.svc-txt li:nth-child(2)::before{background:var(--bleu)}.svc-txt li:nth-child(3)::before{background:var(--vert)}.svc-txt li:nth-child(4)::before{background:var(--rouge)}.svc-txt li:nth-child(5)::before{background:var(--jaune)}.svc-txt li:nth-child(6)::before{background:var(--bleu)}
+.svc-next{margin-top:28px;display:inline-flex;gap:10px;align-items:center;font:500 12px var(--mono);color:var(--gris-2);transition:color .3s}
+.svc-next:hover{color:var(--blanc)}
+.codecard{border:1px solid var(--ligne-n);border-radius:14px;background:var(--noir);overflow:hidden;align-self:start;min-width:0}
+.codecard figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--ligne-n);font:500 11.5px var(--mono);letter-spacing:.06em;color:var(--gris-2)}
+.codecard figcaption .dots{display:inline-flex;gap:6px;margin-right:10px}
+.codecard figcaption .dots i{width:9px;height:9px;border-radius:50%;background:var(--rouge);display:block}
+.codecard figcaption .dots i:nth-child(2){background:var(--jaune)}.codecard figcaption .dots i:nth-child(3){background:var(--vert)}
+.copy{font:500 11px var(--mono);letter-spacing:.08em;color:var(--gris-2);border:1px solid var(--ligne-n);padding:5px 9px;border-radius:6px;transition:color .3s,border-color .3s}
+.copy:hover{color:var(--blanc);border-color:var(--blanc)}
+.codecard pre{font:400 12.5px/1.7 var(--mono);color:#d9d9dc;padding:16px 18px;overflow-x:auto;white-space:pre}
+.acc-note{margin-top:22px;font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gris-2)}
+@media (max-width:980px){.ide{grid-template-columns:1fr;min-height:0}.ide-tree{display:flex;flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--ligne-n);padding:8px;gap:2px;scrollbar-width:none}.tree-h,.tree-dir,.tree-foot{display:none}.tf,.tf.lvl{width:auto;padding:8px 12px}.row{grid-template-columns:36px 1fr}.row>*:nth-child(3),.row .go{grid-column:2}.row .go{padding-top:0}.svc-grid{grid-template-columns:1fr}}
+
+/* ---------- Scansa ---------- */
+.scansa-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px 64px;align-items:center}
+.scansa-txt .lead{font-size:17px;color:var(--gris);max-width:50ch;line-height:1.6;margin-top:22px}
+.scansa-txt .meta{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;margin:34px 0;padding:24px 0;border-top:1px solid var(--ligne-s);border-bottom:1px solid var(--ligne-s)}
+.scansa-txt .meta b{display:block;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gris);margin-bottom:6px}
+.scansa-txt .meta span{font-size:14.5px;line-height:1.45}
+.stores{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:10px;background:var(--encre);color:#fff;border-radius:10px;padding:8px 14px 8px 10px;border:1px solid var(--encre);transition:transform .35s var(--ease)}
+.badge:hover{transform:translateY(-2px)}
+.badge svg{width:24px;height:24px;flex:none}
+.badge small{display:block;font-size:9.5px;letter-spacing:.04em;line-height:1;opacity:.85}
+.badge span{display:block;font-family:var(--display);font-weight:600;font-size:16px;line-height:1.15;letter-spacing:-.01em}
+.lien-site{font:500 13px var(--mono);letter-spacing:.06em;border-bottom:1px solid currentColor;padding-bottom:2px;margin-left:8px}
+.phones{display:grid;grid-template-columns:repeat(3,1fr);align-items:center;gap:0;perspective:1400px;padding:30px 0}
+.phone{width:min(230px,100%);justify-self:center;padding:9px;border-radius:38px;background:#141417;box-shadow:0 30px 60px -20px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);transition:transform 1.2s var(--ease);position:relative;will-change:transform}
+.phone::before{content:"";position:absolute;top:18px;left:50%;width:76px;height:20px;background:#0a0a0b;border-radius:12px;transform:translateX(-50%);z-index:2}
+.phone img{width:100%;height:auto;border-radius:30px}
+.phone:nth-child(1){transform:rotate(-14deg) translate(30px,40px) scale(.92)}
+.phone:nth-child(2){transform:translateY(-10px);z-index:2}
+.phone:nth-child(3){transform:rotate(14deg) translate(-30px,40px) scale(.92)}
+.phones.in .phone:nth-child(1){transform:rotate(-7deg) translate(calc(16px + var(--px,0px)*-.6),calc(26px + var(--py,0px)*-.6)) scale(.94)}
+.phones.in .phone:nth-child(2){transform:translate(var(--px,0px),calc(-10px + var(--py,0px)))}
+.phones.in .phone:nth-child(3){transform:rotate(7deg) translate(calc(-16px + var(--px,0px)*.6),calc(26px + var(--py,0px)*-.6)) scale(.94)}
+.phones.live .phone{transition:transform .25s ease-out}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font:500 12.5px var(--sans);padding:7px 12px;border-radius:999px;border:1px solid var(--ligne-s);background:rgba(255,255,255,.5)}
+.s-noir .chip{border-color:var(--ligne-n);background:rgba(255,255,255,.05)}
+.sous-capot{margin-top:clamp(70px,8vw,120px)}
+.sous-capot h3{font-family:var(--display);font-weight:800;font-size:clamp(26px,3vw,40px);letter-spacing:-.03em;margin-top:16px}
+.pipe{margin-top:34px;border:1px solid var(--ligne-s);border-radius:18px;overflow:hidden;background:#fff}
+.pipe-steps{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--ligne-s)}
+.pipe-btn{width:100%;text-align:left;padding:18px 18px 16px;border-right:1px solid var(--ligne-s);display:flex;flex-direction:column;gap:8px;position:relative;transition:background .3s}
+.pipe-btn:last-child{border-right:0}
+.pipe-btn .pn{font:500 11px var(--mono);letter-spacing:.14em;color:var(--gris)}
+.pipe-btn .pt{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:-.01em;line-height:1.2}
+.pipe-btn:hover{background:var(--blanc)}
+.pipe-btn.on{background:var(--encre);color:var(--blanc)}
+.pipe-btn.on .pn{color:var(--jaune)}
+.pipe-btn.on::after{content:"";position:absolute;left:0;bottom:0;height:3px;background:var(--jaune);width:var(--w,0%);transition:width .25s linear}
+.pipe-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px 40px;padding:32px;min-height:0;align-items:stretch}
+.pipe-txt h4{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-.02em;margin-bottom:12px}
+.pipe-txt p{color:var(--gris);font-size:15.5px;max-width:46ch}
+.pipe-txt .chips{margin-top:18px}
+.pipe-code{border-radius:12px;background:var(--noir);color:#d9d9dc;font:400 12.5px/1.7 var(--mono);padding:18px 20px;overflow-x:auto;white-space:pre;align-self:stretch;min-height:12em}
+@media (max-width:980px){.scansa-top{grid-template-columns:1fr}.phones{display:flex;overflow-x:auto;gap:16px;scroll-snap-type:x mandatory;scroll-padding-inline:4px;padding:10px 4px 20px;perspective:none;-webkit-overflow-scrolling:touch}.phone,.phones.in .phone{transform:none!important;flex:0 0 min(220px,68vw);scroll-snap-align:center}.pipe-steps{grid-template-columns:1fr;border-bottom:0}.pipe-btn{border-right:0;border-bottom:1px solid var(--ligne-s);flex-direction:row;align-items:center;gap:14px;padding:14px 16px}.pipe-panel{grid-template-columns:1fr;padding:22px}.pipe-btn.on::after{height:2px}.scansa-txt .meta{grid-template-columns:1fr}}
+
+/* ---------- parcours : rail ---------- */
+.rail-sec{position:relative}
+.rail-sticky{padding:clamp(64px,8vw,112px) 0 40px}
+html.pin .rail-sticky{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:84px 0 36px;overflow:hidden}
+.rail-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:20px}
+.rail-prog{font:500 12px var(--mono);letter-spacing:.12em;color:var(--gris-2);display:flex;align-items:center;gap:14px}
+.rail-prog i{display:block;width:120px;height:2px;background:var(--ligne-n);position:relative;overflow:hidden}
+.rail-prog i::after{content:"";position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--jaune);transform:scaleX(var(--p,0));transform-origin:0 50%;transition:transform .2s linear}
+.rail-prog em{font-style:normal;color:var(--blanc)}
+.rail{display:flex;gap:22px;padding:0 var(--pad) 18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+html.pin .rail{width:max-content;overflow:visible;scroll-snap-type:none;padding-bottom:0;will-change:transform}
+.rc{flex:none;width:min(430px,80vw);border:1px solid var(--ligne-n);border-radius:20px;padding:28px 26px 30px;background:var(--noir-2);display:flex;flex-direction:column;gap:16px;min-height:440px;scroll-snap-align:start;transition:border-color .4s}
+.rc:hover{border-color:rgba(255,255,255,.3)}
+.rc-intro{width:min(540px,84vw);background:transparent;border:0;padding-left:0;justify-content:center}
+.rc-intro .h2{margin-top:0}
+.rc-intro p{color:#b9b9c0;font-size:16.5px;max-width:42ch;margin-top:22px;line-height:1.6}
+.rc-intro .hint{display:inline-flex;align-items:center;gap:10px;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2);margin-top:30px}
+.rc-intro .hint i{width:36px;height:1px;background:currentColor;display:block;position:relative;overflow:hidden}
+.rc-intro .hint i::after{content:"";position:absolute;left:-100%;top:0;width:100%;height:100%;background:var(--blanc);animation:slideR 1.8s var(--ease) infinite}
+@keyframes slideR{to{left:100%}}
+.rc .top{display:flex;justify-content:space-between;align-items:center;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
+.rc .top .now{display:inline-flex;align-items:center;gap:8px;color:var(--vert)}
+.rc .top .now::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--vert)}
+.rc h3{font-family:var(--display);font-weight:700;font-size:clamp(20px,1.7vw,24px);letter-spacing:-.02em;line-height:1.2}
+.rc .role{font-size:14px;color:var(--gris-2);margin-top:-6px}
+.rc ul{display:grid;gap:9px;font-size:14.5px;line-height:1.5;color:#d5d5da}
+.rc li{padding-left:16px;position:relative}
+.rc li::before{content:"";position:absolute;left:0;top:.8em;width:7px;height:2px;background:var(--jaune)}
+.rc .tags{margin-top:auto;padding-top:8px}
+.rc-form .ligne{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--ligne-n);font-size:14.5px;line-height:1.45;color:#d5d5da}
+.rc-form .ligne b{font:500 12px var(--mono);color:var(--jaune);padding-top:2px}
+.rc-form .ligne small{display:block;color:var(--gris-2);font-size:12.5px;margin-top:3px}
+.rc-meth .m{padding:13px 0;border-top:1px solid var(--ligne-n);display:grid;grid-template-columns:34px 1fr;gap:4px 10px}
+.rc-meth .m b{font:500 12px var(--mono);color:var(--jaune);grid-row:span 2;padding-top:3px}
+.rc-meth .m h4{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.015em}
+.rc-meth .m p{font-size:13.5px;color:var(--gris-2);line-height:1.45}
+
+/* ---------- réalisations ---------- */
+.real-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px}
+.real{display:flex;flex-direction:column;gap:22px}
+.frame{border-radius:14px;overflow:hidden;background:#0f0f12;border:1px solid var(--ligne-s);box-shadow:0 30px 60px -30px rgba(0,0,0,.5);display:block}
+.frame .bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px;border-bottom:1px solid var(--ligne-n);background:#141417}
+.frame .bar i{width:9px;height:9px;border-radius:50%;background:#3a3a40;display:block}
+.frame .bar span{margin-left:12px;flex:1;height:18px;border-radius:5px;background:#1d1d21;font:400 11px/18px var(--mono);color:#9a9aa0;padding:0 10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.frame .view{height:clamp(220px,24vw,380px);overflow:hidden;position:relative;background:#fff}
+.frame .view img{width:100%;height:auto;will-change:transform}
+.frame .view::after{content:"Défilez pour parcourir";position:absolute;right:12px;bottom:10px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(10,10,11,.75);color:#fff;padding:6px 9px;border-radius:6px;transition:opacity .4s}
+.real h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.025em;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.real h3 small{font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
+.real p{color:var(--gris);font-size:15.5px;max-width:58ch}
+.real .liens{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.real .liens .note{font:400 12.5px var(--mono);color:var(--gris-2)}
+.real-data{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px;align-items:start;padding-top:40px;border-top:1px solid var(--ligne-s);margin-top:10px}
+.real-data h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.025em}
+.real-data h3 small{display:block;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2);margin-bottom:12px}
+.real-data p{color:var(--gris);font-size:15.5px;max-width:58ch}
+@media (max-width:980px){.real-grid,.real-data{grid-template-columns:1fr}.frame .view::after{content:"Capture d'écran"}}
+
+/* ---------- bac à sable ---------- */
+.play-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px 64px;align-items:end}
+.play-head p.d{font-size:clamp(16px,1.2vw,18px);color:#b9b9c0;max-width:50ch;line-height:1.6}
+.play{border:1px solid var(--ligne-n);border-radius:16px;overflow:hidden;background:var(--noir-2);margin-top:36px}
+.play-bar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:8px 10px 8px 12px;border-bottom:1px solid var(--ligne-n);background:#0f0f12;flex-wrap:wrap}
+.presets{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.presets button{font:500 12px var(--mono);padding:9px 14px;border-radius:8px;color:var(--gris-2);transition:color .25s,background .25s;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.presets button::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--jaune)}
+.presets button.on{color:var(--blanc);background:rgba(255,255,255,.08)}
+.play-act{display:flex;align-items:center;gap:12px}
+.kbd{font:500 11px var(--mono);color:var(--gris-2);border:1px solid var(--ligne-n);border-radius:5px;padding:4px 7px;white-space:nowrap}
+.play .btn{padding:9px 16px;font-size:13px}
+.play-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);min-height:420px}
+.ed{position:relative;border-right:1px solid var(--ligne-n);min-height:420px}
+.ed pre,.ed textarea{font:400 13px/1.75 var(--mono);padding:18px 22px 18px 60px;margin:0;white-space:pre;overflow:auto;tab-size:4;letter-spacing:0}
+.ed pre{position:absolute;inset:0;color:#d9d9dc;pointer-events:none;counter-reset:l}
+.ed pre .l{display:block;position:relative;counter-increment:l;min-height:1.75em}
+.ed pre .l::before{content:counter(l);position:absolute;left:-42px;width:30px;text-align:right;color:#4a4a52}
+.ed textarea{position:absolute;inset:0;width:100%;height:100%;background:transparent;color:transparent;caret-color:var(--blanc);border:0;outline:0;resize:none;-webkit-text-fill-color:transparent}
+.ed textarea::selection{background:rgba(255,211,107,.28)}
+.ed textarea:focus-visible{outline:0;box-shadow:inset 0 0 0 1px rgba(134,204,255,.5)}
+.out{display:flex;flex-direction:column;background:var(--noir);min-width:0}
+.out-h{display:flex;justify-content:space-between;gap:12px;padding:11px 18px;border-bottom:1px solid var(--ligne-n);font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
+#out{flex:1;font:400 13px/1.75 var(--mono);padding:16px 20px;white-space:pre-wrap;word-break:break-word;color:#d9d9dc;min-height:200px}
+#out .ol{display:block;opacity:0;transform:translateX(-6px);animation:ol .35s var(--ease) forwards}
+@keyframes ol{to{opacity:1;transform:none}}
+#out .err{color:var(--rouge)}#out .hint{color:var(--gris-2)}#out .okl{color:var(--vert)}
+.play-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:12px 18px;border-top:1px solid var(--ligne-n);font:400 12px var(--mono);color:var(--gris-2)}
+.play-foot a{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:980px){.play-head{grid-template-columns:1fr}.play-grid{grid-template-columns:1fr}.ed{border-right:0;border-bottom:1px solid var(--ligne-n);min-height:320px}.ed pre,.ed textarea{font-size:16px;line-height:1.6;padding-left:52px}.ed pre .l{min-height:1.6em}.ed pre .l::before{left:-38px;width:26px}}
+
+/* ---------- stack ---------- */
+.stack-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.q{display:flex;align-items:center;gap:10px;border:1px solid var(--ligne-s);border-radius:999px;padding:0 16px;background:#fff;min-width:min(300px,100%);height:42px}
+.q svg{width:15px;height:15px;flex:none;color:var(--gris)}
+.q input{flex:1;border:0;outline:0;background:none;font:400 14px var(--sans);color:var(--encre);min-width:0}
+.q kbd{font:500 10.5px var(--mono);color:var(--gris);border:1px solid var(--ligne-s);border-radius:4px;padding:1px 6px}
+.filtres{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.filtre{font:500 12.5px var(--sans);padding:9px 14px;border-radius:999px;border:1px solid var(--ligne-s);transition:background .3s,color .3s,border-color .3s}
+.filtre:hover{border-color:var(--encre)}
+.filtre.on{background:var(--encre);color:var(--blanc);border-color:var(--encre)}
+.filtre em{font-style:normal;font-family:var(--mono);font-size:11px;opacity:.6;margin-left:6px}
+.techs{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;min-height:120px}
+.tech{font:500 13px var(--sans);padding:10px 14px;border-radius:10px;border:1px solid var(--ligne-s);background:rgba(255,255,255,.55);display:inline-flex;align-items:center;gap:9px}
+.tech i{width:7px;height:7px;border-radius:50%;background:var(--bleu);display:block}
+.tech[data-cat~="metier"] i{background:var(--jaune)}.tech[data-cat~="mobile"] i{background:var(--bleu)}.tech[data-cat~="web"] i{background:var(--rouge)}.tech[data-cat~="data"] i{background:var(--vert)}.tech[data-cat~="devops"] i{background:var(--encre)}
+.tech.hide{display:none}
+.tech mark{background:rgba(255,211,107,.6);color:inherit;border-radius:2px}
+.stack-empty{display:none;font:400 14px var(--sans);color:var(--gris);padding:10px 0}
+.stack-empty.show{display:block}
+.stack-foot{margin-top:20px;font:400 12.5px var(--mono);color:var(--gris);display:flex;gap:18px;flex-wrap:wrap}
+.stack-foot i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:1px}
+
+/* ---------- à propos ---------- */
+.apropos{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px 80px;align-items:start;margin-top:40px}
+.apropos .big{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.3vw,32px);letter-spacing:-.025em;line-height:1.28}
+.apropos .big em{font-style:normal;color:var(--jaune)}
+.apropos .txt{margin-top:26px;color:#c9c9cf;font-size:16px;max-width:58ch;display:grid;gap:14px}
+.valeurs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.valeur{border-top:1px solid var(--ligne-n);padding-top:16px}
+.valeur b{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em;display:block;margin-bottom:6px}
+.valeur p{font-size:14px;color:#b9b9c0}
+.lockup{display:grid;justify-items:center;gap:16px;padding:44px 20px 38px;border:1px solid var(--ligne-n);border-radius:20px;background:var(--noir-2);margin-bottom:22px;position:relative;overflow:hidden}
+.lockup::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 30%,rgba(255,255,255,.06),transparent 70%);pointer-events:none}
+.lockup .emb{width:min(250px,66%);height:auto;color:var(--blanc);transition:transform 1.2s var(--ease)}
+.lockup:hover .emb{transform:translateY(-4px)}
+.lk-word{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.4vw,32px);letter-spacing:.34em;text-transform:uppercase;padding-left:.34em;line-height:1}
+.lk-sub{font:500 11px var(--mono);letter-spacing:.44em;text-transform:uppercase;color:var(--gris-2);padding-left:.44em}
+.fiche{border:1px solid var(--ligne-n);border-radius:18px;padding:8px 26px;background:var(--noir-2)}
+.fiche dl{display:grid;grid-template-columns:120px 1fr;gap:0 20px}
+.fiche dt{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gris-2);padding:16px 0;border-top:1px solid var(--ligne-n)}
+.fiche dd{font-size:14.5px;padding:15px 0;border-top:1px solid var(--ligne-n);line-height:1.5}
+.fiche dt:first-child,.fiche dt:first-child+dd{border-top:0}
+@media (max-width:980px){.apropos{grid-template-columns:1fr}.valeurs{grid-template-columns:1fr}.fiche dl{grid-template-columns:100px 1fr}}
+
+/* ---------- contact : générateur de brief ---------- */
+.contact{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px 72px;align-items:start}
+.contact .h2{font-size:clamp(40px,5.6vw,84px);line-height:.98;letter-spacing:-.04em}
+.contact .lead{font-size:17px;color:var(--gris);max-width:44ch;margin-top:24px;line-height:1.6}
+.mail{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font:500 clamp(16px,1.6vw,22px) var(--mono);letter-spacing:-.01em}
+.s-blanc .copy{border-color:var(--ligne-s);color:var(--gris)}
+.s-blanc .copy:hover{background:var(--encre);color:var(--blanc);border-color:var(--encre)}
+.contact .infos{margin-top:26px;display:grid;gap:10px;font-size:14px;color:var(--gris)}
+.contact .infos li{display:flex;gap:12px;align-items:baseline}
+.contact .infos li::before{content:"";width:16px;height:1px;background:var(--encre);flex:none;position:relative;top:-4px}
+.brief{margin-top:34px;display:grid;gap:22px}
+.grp>.lb{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gris);display:block;margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:500 13px var(--sans);padding:9px 14px;border-radius:999px;border:1px solid var(--ligne-s);background:#fff;transition:background .25s,color .25s,border-color .25s,transform .3s var(--ease)}
+.opt:hover{border-color:var(--encre)}
+.opt.on{background:var(--encre);color:var(--blanc);border-color:var(--encre)}
+.champs{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.champ{display:grid;gap:8px}
+.champ.full{grid-column:1/-1}
+.champ label{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.champ input,.champ textarea{font:400 15px var(--sans);color:var(--encre);background:#fff;border:1px solid #86868b;border-radius:10px;padding:13px 15px;width:100%;transition:border-color .3s,box-shadow .3s;appearance:none;-webkit-appearance:none}
+.champ textarea{min-height:110px;resize:vertical}
+.champ input:focus,.champ textarea:focus{outline:0;border-color:var(--encre);box-shadow:0 0 0 3px rgba(14,14,16,.08)}
+.bpre{position:sticky;top:90px}
+.bpre .codecard{border-color:rgba(14,14,16,.2);box-shadow:0 40px 80px -40px rgba(0,0,0,.45)}
+.bpre pre{min-height:360px;white-space:pre-wrap;word-break:break-word;font-size:13px}
+.bpre .key{color:var(--bleu)}.bpre .val{color:var(--jaune)}.bpre .cm{color:var(--vert)}.bpre .dim{color:#6a6a72}
+.brief-act{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.brief-act .legal{font-size:12.5px;color:var(--gris);max-width:40ch;flex:1 1 220px}
+.form-msg{font:500 13px var(--mono);color:#17703f;min-height:1.5em;margin-top:10px}
+@media (max-width:980px){.contact{grid-template-columns:1fr}.champs{grid-template-columns:1fr}.bpre{position:static}.bpre pre{min-height:0}}
+
+/* ---------- palette ⌘K ---------- */
+.pal{position:fixed;inset:0;z-index:70;background:rgba(10,10,11,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:none;align-items:flex-start;justify-content:center;padding:12vh 16px 0}
+.pal.open{display:flex}
+.pal-box{width:min(600px,100%);background:var(--noir-2);border:1px solid var(--ligne-n);border-radius:16px;overflow:hidden;box-shadow:0 40px 100px -30px rgba(0,0,0,.85);color:var(--blanc);animation:palIn .25s var(--ease)}
+@keyframes palIn{from{opacity:0;transform:translateY(-8px) scale(.98)}}
+.pal-in{display:flex;align-items:center;gap:12px;padding:15px 18px;border-bottom:1px solid var(--ligne-n);font:400 15px var(--mono)}
+.pal-in .pr{color:var(--vert)}
+.pal-in input{flex:1;background:none;border:0;outline:0;color:var(--blanc);font:inherit;min-width:0}
+.pal-in input::placeholder{color:var(--gris-2)}
+.pal-list{max-height:min(380px,52vh);overflow:auto;padding:8px}
+.pal-list li{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:9px;font-size:14px;cursor:pointer}
+.pal-list li .t{flex:1;min-width:0}
+.pal-list li .g{font:500 10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
+.pal-list li.on{background:rgba(255,255,255,.09)}
+.pal-list li .ic{border-radius:50%}
+.pal-empty{padding:18px 12px;color:var(--gris-2);font-size:14px}
+.pal-foot{display:flex;gap:18px;padding:10px 18px;border-top:1px solid var(--ligne-n);font:500 11px var(--mono);color:var(--gris-2)}
+
+/* ---------- pied ---------- */
+.foot{padding:56px 0 30px;border-top:1px solid var(--ligne-n)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}
+.foot .brand .emb{height:30px}
+.foot .brand b{font-size:13.5px}
+.foot p{font-size:13.5px;color:var(--gris-2);max-width:34ch;margin-top:18px;line-height:1.6}
+.foot h3{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gris-2);margin-bottom:16px}
+.foot ul{display:grid;gap:10px;font-size:14px}
+.foot ul a:hover{text-decoration:underline;text-underline-offset:4px}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:50px;padding-top:22px;border-top:1px solid var(--ligne-n);font:400 12px var(--mono);color:var(--gris-2)}
+#toTop{position:fixed;right:22px;bottom:calc(48px + var(--hostbar,0px));width:42px;height:42px;border-radius:50%;background:rgba(244,242,237,.92);color:var(--encre);border:1px solid rgba(14,14,16,.22);display:grid;place-items:center;z-index:40;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s var(--ease);transform:translateY(10px)}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop svg{width:16px;height:16px}
+@media (min-width:981px){.foot-bot{padding-right:72px}}
+@media (max-width:980px){#toTop{display:none}.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="emb" viewBox="0 0 1000 484"><path d="M4 16L8 25L22 49L80 142L96 165L103 173L112 179L122 184L142 190L152 194L161 200L169 208L179 221L265 356L281 379L300 400L325 422L352 442L376 455L396 464L427 474L454 480L470 483L505 484L528 483L545 480L571 474L592 468L603 464L623 455L646 442L665 429L690 408L710 388L724 370L737 352L854 166L869 143L877 135L886 130L896 126L917 121L927 117L936 110L943 102L949 93L982 42L993 23L995 18L996 13L995 9L994 6L991 4L987 2L976 0L953 0L941 1L931 4L922 10L912 23L861 101L854 110L846 116L836 120L814 126L804 130L795 136L788 143L775 161L676 320L659 342L642 358L630 370L611 383L592 393L572 402L551 408L535 411L524 412L501 413L478 413L461 411L440 406L424 401L409 395L385 382L367 368L359 361L343 345L322 318L257 216L248 203L240 195L230 190L225 188L204 183L194 179L185 173L177 165L171 156L86 21L79 12L75 9L67 3L56 1L22 0L11 3L8 5L5 8L4 11Z"/><path d="M134 13L135 18L137 23L142 32L163 65L200 125L228 167L235 175L244 181L254 185L270 189L280 193L289 198L298 205L305 214L311 223L352 288L369 311L384 327L397 339L411 348L420 354L435 360L456 367L472 371L483 373L500 374L517 373L528 371L549 366L564 360L579 353L593 345L607 334L615 327L630 310L647 287L726 162L738 143L746 135L754 130L764 126L786 122L796 118L804 111L811 103L818 94L856 34L862 24L865 15L865 11L864 7L861 5L857 2L847 0L813 1L802 3L794 8L790 12L783 21L739 90L725 108L717 115L707 120L681 127L671 131L662 137L655 145L584 257L578 266L566 278L553 289L539 296L523 301L512 302L501 303L483 302L467 299L457 295L443 287L430 276L419 264L386 213L376 200L367 193L362 191L352 187L336 184L326 180L321 177L313 170L299 153L214 18L208 10L199 4L189 1L178 0L154 0L143 2L139 4L136 6L135 9Z"/><path d="M265 16L269 25L274 35L351 156L360 169L368 176L377 182L408 191L413 194L422 199L426 203L433 211L453 238L461 246L469 252L474 255L484 259L500 261L511 260L522 257L531 251L543 241L556 223L603 149L614 136L623 130L628 128L654 122L659 120L669 115L677 108L689 90L725 34L731 25L734 15L734 11L733 8L731 5L727 3L722 1L711 0L682 1L677 1L667 5L663 8L655 16L602 99L595 108L586 115L577 119L549 124L540 128L532 135L528 139L510 167L502 174L493 180L488 181L477 182L467 181L456 177L452 175L443 168L436 160L420 137L347 21L341 12L337 9L328 3L318 1L283 0L272 2L269 5L266 8L265 11Z"/></symbol></svg>
+<a class="skip" href="#main">Aller au contenu</a>
+<nav class="nav" id="nav" data-theme="noir" aria-label="Navigation principale">
+  <a class="brand" href="#accueil" aria-label="ZingiTech, retour à l'accueil"><svg class="emb" viewBox="0 0 1000 484" aria-hidden="true"><use href="#emb"/></svg><b>Zingitech</b></a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#scansa">Scansa</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#bac">Bac à sable</a>
+    <a href="#apropos">À propos</a>
+  </div>
+  <div class="nav-right">
+    <button class="kbtn" type="button" id="palBtn" aria-label="Ouvrir la palette de navigation"><span>Aller à</span><kbd>⌘K</kbd></button>
+    <a class="btn btn-plein" href="#contact">Discutons</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><i></i><i></i></button>
+  </div>
+</nav>
+<div class="menu" id="menu" aria-hidden="true">
+  <a href="#services"><span>01</span>Services</a>
+  <a href="#scansa"><span>02</span>Scansa</a>
+  <a href="#parcours"><span>03</span>Parcours</a>
+  <a href="#realisations"><span>04</span>Réalisations</a>
+  <a href="#bac"><span>05</span>Bac à sable</a>
+  <a href="#apropos"><span>06</span>À propos</a>
+  <a href="#contact"><span>07</span>Contact</a>
+  <div class="menu-foot">Disponible pour de nouvelles missions · contact@zingitech.fr</div>
+</div>
+<div class="status" id="status" aria-hidden="true">
+  <span><i class="dot"></i>Disponible · régie, portage</span>
+  <span>§ <em id="st-sec">accueil</em></span>
+  <span><em id="st-pct">0</em> %</span>
+  <span id="st-clock">--:--</span>
+  <span>W-Langage · UTF-8 · LF</span>
+</div>
+
+<!-- ============ ACCUEIL ============ -->
+<header class="hero s-noir" id="accueil" data-theme="noir">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <canvas class="hero-fx" id="fx" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <svg class="hero-emb" viewBox="0 0 1000 484" aria-hidden="true" focusable="false"><path class="b1" d="M4 16L8 25L22 49L80 142L96 165L103 173L112 179L122 184L142 190L152 194L161 200L169 208L179 221L265 356L281 379L300 400L325 422L352 442L376 455L396 464L427 474L454 480L470 483L505 484L528 483L545 480L571 474L592 468L603 464L623 455L646 442L665 429L690 408L710 388L724 370L737 352L854 166L869 143L877 135L886 130L896 126L917 121L927 117L936 110L943 102L949 93L982 42L993 23L995 18L996 13L995 9L994 6L991 4L987 2L976 0L953 0L941 1L931 4L922 10L912 23L861 101L854 110L846 116L836 120L814 126L804 130L795 136L788 143L775 161L676 320L659 342L642 358L630 370L611 383L592 393L572 402L551 408L535 411L524 412L501 413L478 413L461 411L440 406L424 401L409 395L385 382L367 368L359 361L343 345L322 318L257 216L248 203L240 195L230 190L225 188L204 183L194 179L185 173L177 165L171 156L86 21L79 12L75 9L67 3L56 1L22 0L11 3L8 5L5 8L4 11Z"/><path class="b2" d="M134 13L135 18L137 23L142 32L163 65L200 125L228 167L235 175L244 181L254 185L270 189L280 193L289 198L298 205L305 214L311 223L352 288L369 311L384 327L397 339L411 348L420 354L435 360L456 367L472 371L483 373L500 374L517 373L528 371L549 366L564 360L579 353L593 345L607 334L615 327L630 310L647 287L726 162L738 143L746 135L754 130L764 126L786 122L796 118L804 111L811 103L818 94L856 34L862 24L865 15L865 11L864 7L861 5L857 2L847 0L813 1L802 3L794 8L790 12L783 21L739 90L725 108L717 115L707 120L681 127L671 131L662 137L655 145L584 257L578 266L566 278L553 289L539 296L523 301L512 302L501 303L483 302L467 299L457 295L443 287L430 276L419 264L386 213L376 200L367 193L362 191L352 187L336 184L326 180L321 177L313 170L299 153L214 18L208 10L199 4L189 1L178 0L154 0L143 2L139 4L136 6L135 9Z"/><path class="b3" d="M265 16L269 25L274 35L351 156L360 169L368 176L377 182L408 191L413 194L422 199L426 203L433 211L453 238L461 246L469 252L474 255L484 259L500 261L511 260L522 257L531 251L543 241L556 223L603 149L614 136L623 130L628 128L654 122L659 120L669 115L677 108L689 90L725 34L731 25L734 15L734 11L733 8L731 5L727 3L722 1L711 0L682 1L677 1L667 5L663 8L655 16L602 99L595 108L586 115L577 119L549 124L540 128L532 135L528 139L510 167L502 174L493 180L488 181L477 182L467 181L456 177L452 175L443 168L436 160L420 137L347 21L341 12L337 9L328 3L318 1L283 0L272 2L269 5L266 8L265 11Z"/></svg>
+      <h1><span class="ln"><span>Des applications métiers fiables,</span></span><span class="ln"><span><em>des produits numériques qui vivent.</em></span></span></h1>
+      <p class="lead">ZingiTech conçoit, fait évoluer et maintient les logiciels métiers critiques des entreprises, et développe des applications mobiles et web, de l'idée jusqu'à la publication sur les stores.</p>
+      <div class="cta-row">
+        <a class="btn btn-plein" href="#contact">Discutons de votre projet</a>
+        <a class="btn btn-ghost" href="#bac">Essayer le W-Langage</a>
+      </div>
+    </div>
+    <div class="hero-ed" id="heroEd">
+      <div class="win" id="win" aria-hidden="true">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><div class="editor-tabs" id="tabs"><span class="on">ZingiTech.wl</span><span>Run_IncidentPaie.wl</span><span>WS_Dossier.wl</span><span>Migration_SQLServer.wl</span></div></div>
+        <div class="code" id="code"></div>
+        <div class="console" id="console"></div>
+      </div>
+      <div class="win-cap" aria-hidden="true"><span>// état du projet</span><span id="capTxt">lignes de code dispersées</span></div>
+    </div>
+  </div>
+  <div class="wrap hero-foot">
+    <div class="scroll-hint" aria-hidden="true"><i></i>Défiler</div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ DÉCLARATIONS ============ -->
+<section class="s-blanc" id="chiffres" data-theme="blanc">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap decl">
+    <div class="decl-grid">
+      <div class="decl-item rv"><code><span class="i">nAnnées</span> <span class="k">est un entier</span> <span class="p">=</span></code><b><span data-count="6">6</span><sup>+</sup></b><p>années sur des applications métiers critiques</p></div>
+      <div class="decl-item rv"><code><span class="i">nEnvironnements</span> <span class="k">est un entier</span> <span class="p">=</span></code><b><span data-count="3">3</span></b><p>environnements métiers : juridique, santé, édition logicielle</p></div>
+      <div class="decl-item rv"><code><span class="i">nAppsPubliées</span> <span class="k">est un entier</span> <span class="p">=</span></code><b><span data-count="1">1</span></b><p>application publiée sur l'App Store et Google Play</p></div>
+      <div class="decl-item rv"><code><span class="i">nBoutiques</span> <span class="k">est un entier</span> <span class="p">=</span></code><b><span data-count="2">2</span></b><p>boutiques e-commerce réalisées pour des clients</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES : EXPLORATEUR ============ -->
+<section class="s-noir" id="services" data-theme="noir">
+  <div class="strip" aria-hidden="true"><div class="strip-in"></div></div>
+  <div class="wrap sec">
+    <div class="sec-head rv">
+      <div><p class="lbl">// 01 · services</p><h2 class="h2 sw">Quatre façons de travailler ensemble.</h2></div>
+      <p>En mission longue au sein de votre équipe ou sur un produit livré clé en main. Sur site, hybride ou à distance. Les tarifs et conditions sont communiqués sur demande, lors de la prise de contact.</p>
+    </div>
+    <div class="ide rv" id="ide">
+      <aside class="ide-tree" aria-label="Fichiers">
+        <p class="tree-h">Explorateur</p>
+        <button class="tf on" type="button" data-f="lisezmoi"><i class="ic md"></i>LISEZMOI.md</button>
+        <p class="tree-dir">services/</p>
+        <button class="tf lvl" type="button" data-f="regie"><i class="ic wl"></i>regie.wl</button>
+        <button class="tf lvl" type="button" data-f="mobile"><i class="ic ts"></i>mobile.ts</button>
+        <button class="tf lvl" type="button" data-f="web"><i class="ic php"></i>web.php</button>
+        <button class="tf lvl" type="button" data-f="data"><i class="ic py"></i>data.py</button>
+        <p class="tree-dir">contact/</p>
+        <a class="tf lvl" href="#contact"><i class="ic txt"></i>brief.txt</a>
+        <p class="tree-foot">↑ ↓ pour parcourir<br>Entrée pour ouvrir</p>
+      </aside>
+      <div class="ide-main">
+        <div class="ide-tabs" id="ideTabs" role="tablist" aria-label="Fichiers ouverts"></div>
+        <div class="ide-panes">
+          <div class="pane md on" id="pane-lisezmoi" role="tabpanel">
+            <p class="lbl"># LISEZMOI.md</p>
+            <h2>Trois terrains, une même exigence.</h2>
+            <p>Une double compétence rare : l'expertise WinDev et bases de données relationnelles des applications métiers, et la stack moderne des produits mobiles, IA et cloud. Dans les deux cas, du code qui tient en production.</p>
+            <div class="rows">
+              <button class="row" type="button" data-open="regie">
+                <span class="num">01</span>
+                <div><h3>Applications métiers</h3><div class="tags"><span class="tag">WinDev</span><span class="tag">WebDev</span><span class="tag">HFSQL</span><span class="tag">SQL Server</span><span class="tag">Oracle</span><span class="tag">SOAP / REST</span></div></div>
+                <p>Run et Build sur des logiciels RH, paie, gestion administrative et juridique. Prise en main de l'existant, incidents critiques, support N2/N3, mises en production maîtrisées.</p>
+                <span class="go">regie.wl →</span>
+              </button>
+              <button class="row" type="button" data-open="mobile">
+                <span class="num">02</span>
+                <div><h3>Mobile &amp; IA</h3><div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">pgvector</span><span class="tag">RevenueCat</span></div></div>
+                <p>Applications iOS et Android en React Native, back-end Supabase, modèles de langage, OCR et recherche sémantique. Abonnements, conformité et publication sur les stores.</p>
+                <span class="go">mobile.ts →</span>
+              </button>
+              <button class="row" type="button" data-open="web">
+                <span class="num">03</span>
+                <div><h3>Web &amp; Data</h3><div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Airflow</span><span class="tag">Spark</span><span class="tag">FastAPI</span><span class="tag">Power BI</span></div></div>
+                <p>Sites vitrines et boutiques en ligne qui vendent, pipelines de données, API Python et reporting décisionnel pour les équipes qui pilotent.</p>
+                <span class="go">web.php →</span>
+              </button>
+            </div>
+          </div>
+          <div class="pane" id="pane-regie" role="tabpanel">
+            <div class="svc-h"><span class="num">01</span><h3>Mission en régie, via ESN ou en portage</h3><span class="tagl">Run · Build · WinDev</span></div>
+            <div class="svc-grid">
+              <div class="svc-txt">
+                <p>Missions courtes ou longues, pour renforcer une équipe sur des applications métiers qui ne peuvent pas s'arrêter.</p>
+                <ul>
+                  <li>Développement et maintenance d'applications WinDev et WebDev (W-Langage, HFSQL)</li>
+                  <li>Run et Build : maintenance évolutive et corrective, support N2/N3, incidents critiques</li>
+                  <li>Reverse engineering et modernisation d'applications existantes</li>
+                  <li>Bases de données : conception, optimisation, migrations (SQL Server, Oracle, PostgreSQL, MySQL, HFSQL)</li>
+                  <li>Interopérabilité : Web Services SOAP, API REST, flux inter-applicatifs</li>
+                  <li>Animation Agile : Scrum Master, pilotage du ticketing, coordination PO et équipe</li>
+                </ul>
+                <button class="svc-next" type="button" data-open="mobile">Fichier suivant → mobile.ts</button>
+              </div>
+              <figure class="codecard"><figcaption><span><span class="dots"><i></i><i></i><i></i></span>Run_IncidentPaie.wl</span><button class="copy" type="button">Copier</button></figcaption><pre data-lang="wl"><code>// Run applicatif : incident critique sur un lot de paie
+PROCEDURE CorrigerLotPaie(nIDLot est un entier)
+nAnomalies est un entier = 0
+HLitRecherche(BulletinPaie, IDLot, nIDLot)
+TANTQUE HTrouve(BulletinPaie)
+    SI BulletinPaie.MontantNet &lt; 0 ALORS
+        nAnomalies++
+        BulletinPaie.Statut = "A_RECALCULER"
+        HModifie(BulletinPaie)
+    FIN
+    HLitSuivant(BulletinPaie, IDLot)
+FIN
+SI nAnomalies &gt; 0 ALORS RecalculerLot(nIDLot)
+RENVOYER nAnomalies</code></pre></figure>
+            </div>
+          </div>
+          <div class="pane" id="pane-mobile" role="tabpanel">
+            <div class="svc-h"><span class="num">02</span><h3>Applications mobiles</h3><span class="tagl">iOS · Android · IA</span></div>
+            <div class="svc-grid">
+              <div class="svc-txt">
+                <p>De la conception à la publication sur l'App Store et Google Play, avec un back-end qui tient la charge et un modèle économique en place.</p>
+                <ul>
+                  <li>Conception et développement iOS et Android (React Native, Expo, TypeScript)</li>
+                  <li>Back-end Supabase : authentification, PostgreSQL, stockage, Edge Functions</li>
+                  <li>Intégration IA : OCR, modèles de langage, RAG, recherche sémantique</li>
+                  <li>Abonnements et achats intégrés (RevenueCat), conformité App Store et Google Play, publication</li>
+                </ul>
+                <button class="svc-next" type="button" data-open="web">Fichier suivant → web.php</button>
+              </div>
+              <figure class="codecard"><figcaption><span><span class="dots"><i></i><i></i><i></i></span>analyse.ts</span><button class="copy" type="button">Copier</button></figcaption><pre data-lang="ts"><code>// Le quota d'analyses est contrôlé côté serveur, jamais dans l'app
+export async function analyserDocument(docId: string) {
+  const { data, error } = await supabase.functions
+    .invoke('analyser-bail', { body: { docId } })
+
+  if (error) {
+    const status = error.context?.status
+    if (status === 402) return { ok: false, raison: 'QUOTA' }
+    throw new Error(error.message)
+  }
+  return { ok: true, score: data.score, clauses: data.clauses }
+}</code></pre></figure>
+            </div>
+          </div>
+          <div class="pane" id="pane-web" role="tabpanel">
+            <div class="svc-h"><span class="num">03</span><h3>Sites web &amp; e-commerce</h3><span class="tagl">WordPress · WooCommerce</span></div>
+            <div class="svc-grid">
+              <div class="svc-txt">
+                <p>Des sites vitrines et des boutiques en ligne pensés pour vendre, administrables par vos équipes.</p>
+                <ul>
+                  <li>Sites vitrines et boutiques en ligne (WordPress, WooCommerce, Elementor)</li>
+                  <li>Catalogue, paiement, comptes clients, newsletter</li>
+                  <li>Personnalisation produit en ligne, commande sur mesure</li>
+                  <li>Mise en ligne, sauvegardes, accompagnement à la prise en main</li>
+                </ul>
+                <button class="svc-next" type="button" data-open="data">Fichier suivant → data.py</button>
+              </div>
+              <figure class="codecard"><figcaption><span><span class="dots"><i></i><i></i><i></i></span>functions.php</span><button class="copy" type="button">Copier</button></figcaption><pre data-lang="php"><code>// Champ de personnalisation sur la fiche produit
+add_action('woocommerce_before_add_to_cart_button', function () {
+    global $product;
+    if (!$product-&gt;get_meta('_personnalisable')) return;
+    woocommerce_form_field('texte_grave', [
+        'type'      =&gt; 'text',
+        'label'     =&gt; 'Texte à graver',
+        'required'  =&gt; true,
+        'maxlength' =&gt; 24,
+    ]);
+});
+add_filter('woocommerce_add_cart_item_data', function ($item) {
+    $item['texte_grave'] = sanitize_text_field($_POST['texte_grave'] ?? '');
+    return $item;
+});</code></pre></figure>
+            </div>
+          </div>
+          <div class="pane" id="pane-data" role="tabpanel">
+            <div class="svc-h"><span class="num">04</span><h3>Data &amp; automatisation</h3><span class="tagl">Airflow · Python · Power BI</span></div>
+            <div class="svc-grid">
+              <div class="svc-txt">
+                <p>Des flux de données fiables et des tableaux de bord que les équipes consultent vraiment.</p>
+                <ul>
+                  <li>Pipelines de données (Airflow, Spark), traitements planifiés et supervisés</li>
+                  <li>API Python (FastAPI, Flask) et automatisation de tâches métier</li>
+                  <li>Reporting décisionnel (Power BI), modèles de données</li>
+                  <li>Conteneurisation et déploiement (Docker, Kubernetes)</li>
+                </ul>
+                <a class="svc-next" href="#contact">Écrire un brief → contact/brief.txt</a>
+              </div>
+              <figure class="codecard"><figcaption><span><span class="dots"><i></i><i></i><i></i></span>reporting_dag.py</span><button class="copy" type="button">Copier</button></figcaption><pre data-lang="py"><code># Pipeline quotidien de reporting
+with DAG("reporting_quotidien", schedule="0 6 * * *", catchup=False) as dag:
+    extraire = PythonOperator(task_id="extraire_ventes",
+                              python_callable=extraire_ventes)
+    agreger = SparkSubmitOperator(task_id="agreger",
+                                  application="jobs/agreger.py")
+    publier = PythonOperator(task_id="publier_powerbi",
+                             python_callable=rafraichir_dataset)
+    extraire &gt;&gt; agreger &gt;&gt; publier</code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="acc-note rv">Tarifs et conditions sur demande · sur site, hybride ou à distance</p>
+  </div>
+</section>
+
+<!-- ============ SCANSA ============ -->
+<section class="s-blanc" id="scansa" data-theme="blanc">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="scansa-top">
+      <div class="scansa-txt rv">
+        <p class="lbl">// 02 · produit ZingiTech</p>
+        <h2 class="h2 sw">Scansa lit votre bail et repère les clauses abusives.</h2>
+        <p class="lead">Scansa scanne un bail ou un document locatif et détecte, grâce à l'IA, les clauses abusives ou illégales au regard du droit français, dont la loi du 6 juillet 1989. Score de conformité, résumé clair, article de loi cité.</p>
+        <div class="meta">
+          <div><b>Rôle</b><span>Conception produit, développement intégral, back-end, IA, publication et monétisation, en solo.</span></div>
+          <div><b>Lancement</b><span>Mars 2026 sur l'App Store, mises à jour régulières depuis (version 1.0.7 en octobre 2026).</span></div>
+          <div><b>Modèle</b><span>Freemium, abonnements Premium et Titanium par achats intégrés.</span></div>
+          <div><b>Plateformes</b><span>iPhone, iPad et Android. Site produit : scansa.fr.</span></div>
+        </div>
+        <div class="stores">
+          <a class="badge" href="https://apps.apple.com/fr/app/scansa/id6758580692" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.63c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.81-1.42-.14-2.77.84-3.49.84-.72 0-1.83-.82-3-.8-1.55.02-2.97.9-3.77 2.28-1.61 2.79-.41 6.92 1.16 9.18.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.73c1.24-.02 2.03-1.13 2.79-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.48-3.67zM14.08 5.86c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.03.08 2.07-.52 2.71-1.29z"/></svg><span><small>Télécharger dans l'</small>App Store</span></a>
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.zingila.leaselens&amp;hl=fr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.4c-.3.3-.4.7-.4 1.2v16.8c0 .5.1.9.4 1.2l.1.1L13.3 12v-.2L3.7 2.3l-.1.1z" fill="#2fd8ff"/><path d="M16.5 15.3L13.3 12v-.2l3.2-3.3.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.3l-3.8 2.2-.1 0z" fill="#ffd400"/><path d="M16.6 15.2L13.3 12 3.6 21.6c.4.4.9.4 1.6 0l11.4-6.4" fill="#ff3a44"/><path d="M16.6 8.6L5.2 2.2c-.7-.4-1.2-.3-1.6.1L13.3 12l3.3-3.4z" fill="#32a071"/></svg><span><small>Disponible sur</small>Google Play</span></a>
+          <a class="lien-site" href="https://scansa.fr" target="_blank" rel="noopener">scansa.fr</a>
+        </div>
+      </div>
+      <div class="phones" id="phones">
+        <div class="phone"><img src="assets/scansa-01.jpg" width="460" height="1000" loading="lazy" decoding="async" alt="Scansa, écran de scan d'un bail d'habitation"></div>
+        <div class="phone"><img src="assets/scansa-02.jpg" width="460" height="1000" loading="lazy" decoding="async" alt="Scansa, analyse des clauses d'un bail"></div>
+        <div class="phone"><img src="assets/scansa-03.jpg" width="460" height="1000" loading="lazy" decoding="async" alt="Scansa, score de conformité et résumé"></div>
+      </div>
+    </div>
+    <div class="chips rv" aria-label="Fonctionnalités de Scansa">
+      <span class="chip">Scanner multi-pages</span><span class="chip">Import PDF, DOCX, images</span><span class="chip">Score de conformité pondéré</span><span class="chip">Articles de loi cités</span><span class="chip">Chat juridique</span><span class="chip">Coffre-fort cloud et export PDF</span>
+    </div>
+    <div class="sous-capot rv">
+      <p class="lbl">// sous le capot</p>
+      <h3>Le pipeline d'analyse, étape par étape.</h3>
+      <div class="pipe" id="pipe">
+        <div class="pipe-steps" role="tablist" aria-label="Étapes du pipeline">
+          <button class="pipe-btn on" role="tab" aria-selected="true" data-i="0"><span class="pn">01</span><span class="pt">OCR par vision</span></button>
+          <button class="pipe-btn" role="tab" aria-selected="false" data-i="1"><span class="pn">02</span><span class="pt">Qualification juridique</span></button>
+          <button class="pipe-btn" role="tab" aria-selected="false" data-i="2"><span class="pn">03</span><span class="pt">Recherche hybride</span></button>
+          <button class="pipe-btn" role="tab" aria-selected="false" data-i="3"><span class="pn">04</span><span class="pt">Vérification par LLM</span></button>
+          <button class="pipe-btn" role="tab" aria-selected="false" data-i="4"><span class="pn">05</span><span class="pt">Score et droits</span></button>
+        </div>
+        <div class="pipe-panel">
+          <div class="pipe-txt"><h4 id="pipe-h"></h4><p id="pipe-p"></p><div class="chips" id="pipe-chips"></div></div>
+          <pre class="pipe-code" id="pipe-code"></pre>
+        </div>
+      </div>
+      <div class="chips" aria-label="Stack de Scansa">
+        <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">TypeScript</span><span class="chip">NativeWind</span><span class="chip">Supabase</span><span class="chip">pgvector</span><span class="chip">Groq (Llama)</span><span class="chip">OpenAI Embeddings</span><span class="chip">RevenueCat</span><span class="chip">EAS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARCOURS : RAIL ============ -->
+<section class="s-noir rail-sec" id="parcours" data-theme="noir">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="rail-sticky" id="railSticky">
+    <div class="wrap">
+      <div class="rail-head">
+        <p class="lbl">// 03 · parcours</p>
+        <div class="rail-prog" aria-hidden="true"><i id="railBar"></i><em id="railIdx">01 / 06</em></div>
+      </div>
+    </div>
+    <div class="rail" id="rail">
+      <article class="rc rc-intro">
+        <h2 class="h2">Six ans sur des applications qui ne peuvent pas s'arrêter.</h2>
+        <p>Trois contextes d'intervention, présentés sans nom d'organisation : ce qui compte, c'est le type d'environnement, le niveau de responsabilité et ce qui a été livré.</p>
+        <span class="hint"><i></i>Défiler pour parcourir</span>
+      </article>
+      <article class="rc">
+        <div class="top"><span>Secteur juridique</span><span class="now">Mission actuelle</span></div>
+        <h3>Institution nationale du secteur juridique</h3>
+        <p class="role">Ingénieur logiciel et Scrum Master sur les applications métiers, en lien direct avec le Product Owner.</p>
+        <ul>
+          <li>Run : demandes urgentes, reverse engineering pour comprendre et faire évoluer l'existant</li>
+          <li>Optimisation des performances, amélioration de l'architecture, résolution d'anomalies complexes</li>
+          <li>Conception d'un Web Service SOAP pour l'interopérabilité du système d'information</li>
+          <li>Animation des cérémonies Scrum et pilotage du ticketing</li>
+        </ul>
+        <div class="tags"><span class="tag">WinDev</span><span class="tag">SOAP</span><span class="tag">SQL</span><span class="tag">Scrum</span></div>
+      </article>
+      <article class="rc">
+        <div class="top"><span>Santé · médico-social</span><span>2 ans</span></div>
+        <h3>Grand groupe du secteur santé et médico-social</h3>
+        <p class="role">Applications métiers critiques (RH, paie, gestion administrative) en environnement WinDev.</p>
+        <ul>
+          <li>Run et Build complets : maintenance évolutive et corrective, nouvelles fonctionnalités, fiabilisation des traitements</li>
+          <li>SQL avancé, automatisation des flux inter-applicatifs, sécurisation de données sensibles, supervision</li>
+          <li>Gestion autonome des incidents critiques et du support N2/N3, en Agile Scrum</li>
+        </ul>
+        <div class="tags"><span class="tag">WinDev</span><span class="tag">HFSQL</span><span class="tag">SQL Server</span><span class="tag">Support N2/N3</span></div>
+      </article>
+      <article class="rc">
+        <div class="top"><span>Édition logicielle</span><span>2 ans et demi</span></div>
+        <h3>Éditeur de logiciels</h3>
+        <p class="role">Développement, bases de données et relation client sur une suite d'applications WinDev.</p>
+        <ul>
+          <li>Développement et maintenance d'applications WinDev (DLL), automatisation, pipelines de données</li>
+          <li>Conception et évolution des bases de données, migrations et déploiements</li>
+          <li>Responsable de l'outil de ticketing, Run applicatif et support client</li>
+          <li>Formation des clients aux outils, accompagnement fonctionnel</li>
+        </ul>
+        <div class="tags"><span class="tag">WinDev</span><span class="tag">Oracle</span><span class="tag">Migrations</span><span class="tag">Ticketing</span></div>
+      </article>
+      <article class="rc rc-form">
+        <div class="top"><span>Formation</span><span>2015 → 2021</span></div>
+        <h3>Trois diplômes, une spécialisation data.</h3>
+        <div>
+          <div class="ligne"><b>2021</b><div>Certification Data Engineer<small>400 h de formation · 18 certifications · 3 projets</small></div></div>
+          <div class="ligne"><b>2017–19</b><div>Licence professionnelle<small>Développement d'applications</small></div></div>
+          <div class="ligne"><b>2015–17</b><div>BTS SIO, option SLAM<small>Solutions logicielles et applications métiers</small></div></div>
+        </div>
+      </article>
+      <article class="rc rc-meth">
+        <div class="top"><span>Façon de travailler</span><span>4 principes</span></div>
+        <h3>Ce qui ne change pas d'une mission à l'autre.</h3>
+        <div>
+          <div class="m"><b>01</b><h4>Prise en main rapide</h4><p>Reverse engineering d'applications existantes, sans documentation parfois, pour livrer vite sans casser.</p></div>
+          <div class="m"><b>02</b><h4>Autonomie sur les incidents</h4><p>Diagnostic, correctif, communication et retour d'expérience, jusqu'à la clôture.</p></div>
+          <div class="m"><b>03</b><h4>Communication directe</h4><p>En lien direct avec les équipes métier et le Product Owner, du besoin à la mise en production.</p></div>
+          <div class="m"><b>04</b><h4>Mises en production maîtrisées</h4><p>Cycles de qualification, déploiements planifiés, pas de surprise le lundi matin.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉALISATIONS ============ -->
+<section class="s-blanc" id="realisations" data-theme="blanc">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="sec-head rv">
+      <div><p class="lbl">// 04 · réalisations clients</p><h2 class="h2 sw">Des boutiques qui vendent, des outils qui tournent.</h2></div>
+      <p>Deux boutiques en ligne réalisées pour des artisans, et un projet data mené de la base de données jusqu'à l'API de prédiction.</p>
+    </div>
+    <div class="real-grid">
+      <article class="real rv">
+        <a class="frame" href="https://diysoul.com" target="_blank" rel="noopener" aria-label="Ouvrir diysoul.com dans un nouvel onglet">
+          <div class="bar"><i></i><i></i><i></i><span>diysoul.com</span></div>
+          <div class="view"><img src="assets/diysoul.jpg" width="800" height="1120" loading="lazy" decoding="async" alt="Page d'accueil de la boutique DIY Soul"></div>
+        </a>
+        <h3>DIY Soul <small>E-commerce · créations personnalisées</small></h3>
+        <p>Marque d'artisanat moderne : résine époxy, porte-clés, dominos, plateaux, décorations et créations sur mesure. Boutique WordPress, WooCommerce et Elementor avec catalogue par catégories, produits personnalisables, commande sur mesure, comptes clients, newsletter, page de prestations événementielles et lecteur radio intégré.</p>
+        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span><span class="tag">Personnalisation produit</span></div>
+        <div class="liens"><a class="btn btn-ghost" href="https://diysoul.com" target="_blank" rel="noopener">Voir la boutique</a></div>
+      </article>
+      <article class="real rv">
+        <div class="frame">
+          <div class="bar"><i></i><i></i><i></i><span>atelier-dart.fr</span></div>
+          <div class="view"><img src="assets/atelier-dart.jpg" width="1000" height="1528" loading="lazy" decoding="async" alt="Page d'accueil de la boutique Atelier d'Art"></div>
+        </div>
+        <h3>Atelier d'Art <small>E-commerce · textile et objets personnalisables</small></h3>
+        <p>Atelier de personnalisation textile, broderie, peluches et mugs installé à Compiègne. Boutique WordPress, WooCommerce et Elementor : personnalisation en ligne avec import du design du client, mise en avant des meilleures ventes, newsletter, retrait en atelier ou livraison.</p>
+        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span><span class="tag">Import de design</span></div>
+        <div class="liens"><span class="note">Site en cours de finalisation chez le client</span></div>
+      </article>
+      <article class="real-data rv">
+        <div><h3><small>Projet data · formation, finalisé en juin 2019</small>API de prédiction d'attrition</h3></div>
+        <div>
+          <p>Conception et alimentation d'une base de données à partir d'un jeu de données, puis API de requêtage et de prédiction du taux d'attrition d'une entreprise, avec un rapport technique d'évaluation. Travail en binôme, de la modélisation au déploiement conteneurisé.</p>
+          <div class="tags" style="margin-top:16px"><span class="tag">Python 3</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Linux</span><span class="tag">Bash</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BAC À SABLE ============ -->
+<section class="s-noir" id="bac" data-theme="noir">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="play-head rv">
+      <div><p class="lbl">// 05 · bac à sable</p><h2 class="h2 sw">Essayez le W-Langage, ici, maintenant.</h2></div>
+      <p class="d">Le langage de WinDev, celui des logiciels de paie, de gestion et de dossiers que ZingiTech fait tourner. Modifiez le programme, exécutez-le : tout se passe dans votre navigateur, rien n'est envoyé.</p>
+    </div>
+    <div class="play rv" id="play">
+      <div class="play-bar">
+        <div class="presets" role="group" aria-label="Programmes d'exemple">
+          <button type="button" data-p="0" class="on">paie.wl</button>
+          <button type="button" data-p="1">migration.wl</button>
+          <button type="button" data-p="2">dossiers.wl</button>
+        </div>
+        <div class="play-act"><span class="kbd" aria-hidden="true">⌘ ↵</span><button class="btn btn-plein" type="button" id="run">Exécuter</button></div>
+      </div>
+      <div class="play-grid">
+        <div class="ed">
+          <pre id="hl" aria-hidden="true"></pre>
+          <textarea id="src" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Code W-Langage à exécuter"></textarea>
+        </div>
+        <div class="out">
+          <div class="out-h"><span>Trace</span><span id="outMeta">prêt</span></div>
+          <div id="out" aria-live="polite"><span class="ol hint">// Appuyez sur Exécuter pour lancer le programme</span></div>
+        </div>
+      </div>
+      <div class="play-foot"><span>Interpréteur maison, sous-ensemble du W-Langage : variables, tableaux, SI, POUR, TANTQUE, procédures, Trace.</span><span>Tout s'exécute localement</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="s-blanc" id="stack" data-theme="blanc">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="stack rv">
+      <div class="stack-head">
+        <div><p class="lbl">// 06 · compétences techniques</p><h2 class="h2">La stack, par famille.</h2></div>
+        <label class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Chercher une technologie" aria-label="Chercher une technologie"><kbd>/</kbd></label>
+      </div>
+      <div class="filtres" id="filtres" role="group" aria-label="Filtrer les technologies">
+        <button class="filtre on" type="button" data-f="all">Tout<em id="n-all"></em></button>
+        <button class="filtre" type="button" data-f="metier">Applications métiers<em id="n-metier"></em></button>
+        <button class="filtre" type="button" data-f="mobile">Mobile &amp; IA<em id="n-mobile"></em></button>
+        <button class="filtre" type="button" data-f="web">Web<em id="n-web"></em></button>
+        <button class="filtre" type="button" data-f="data">Data<em id="n-data"></em></button>
+        <button class="filtre" type="button" data-f="devops">DevOps &amp; méthodes<em id="n-devops"></em></button>
+      </div>
+      <div class="techs" id="techs">
+        <span class="tech" data-cat="metier"><i></i>W-Langage</span><span class="tech" data-cat="metier"><i></i>WinDev</span><span class="tech" data-cat="metier"><i></i>WebDev</span><span class="tech" data-cat="metier"><i></i>HFSQL</span><span class="tech" data-cat="metier data"><i></i>SQL Server</span><span class="tech" data-cat="metier data"><i></i>Oracle</span><span class="tech" data-cat="metier"><i></i>PL/SQL</span><span class="tech" data-cat="metier"><i></i>Web Services SOAP</span><span class="tech" data-cat="metier web"><i></i>API REST</span><span class="tech" data-cat="metier"><i></i>.NET</span><span class="tech" data-cat="metier"><i></i>C++</span><span class="tech" data-cat="metier"><i></i>VBA</span><span class="tech" data-cat="metier"><i></i>DBeaver · Navicat</span>
+        <span class="tech" data-cat="mobile"><i></i>React Native</span><span class="tech" data-cat="mobile"><i></i>Expo · expo-router</span><span class="tech" data-cat="mobile web"><i></i>TypeScript</span><span class="tech" data-cat="mobile"><i></i>NativeWind · Tailwind</span><span class="tech" data-cat="mobile"><i></i>Supabase</span><span class="tech" data-cat="mobile data"><i></i>PostgreSQL · pgvector</span><span class="tech" data-cat="mobile"><i></i>Edge Functions (Deno)</span><span class="tech" data-cat="mobile"><i></i>LLM (Llama via Groq)</span><span class="tech" data-cat="mobile"><i></i>OCR par vision</span><span class="tech" data-cat="mobile"><i></i>Embeddings OpenAI</span><span class="tech" data-cat="mobile"><i></i>RAG hybride · HyDE</span><span class="tech" data-cat="mobile"><i></i>RevenueCat</span><span class="tech" data-cat="mobile"><i></i>Achats intégrés iOS / Android</span><span class="tech" data-cat="mobile devops"><i></i>EAS Build · mises à jour OTA</span>
+        <span class="tech" data-cat="web"><i></i>WordPress</span><span class="tech" data-cat="web"><i></i>WooCommerce</span><span class="tech" data-cat="web"><i></i>Elementor</span><span class="tech" data-cat="web"><i></i>PHP</span><span class="tech" data-cat="web"><i></i>HTML · CSS</span><span class="tech" data-cat="web data"><i></i>Django</span>
+        <span class="tech" data-cat="data"><i></i>Python</span><span class="tech" data-cat="data"><i></i>FastAPI · Flask</span><span class="tech" data-cat="data"><i></i>Airflow</span><span class="tech" data-cat="data"><i></i>Spark</span><span class="tech" data-cat="data"><i></i>Hive · HBase</span><span class="tech" data-cat="data"><i></i>BigQuery</span><span class="tech" data-cat="data"><i></i>Power BI</span><span class="tech" data-cat="data"><i></i>MySQL</span><span class="tech" data-cat="data"><i></i>MongoDB</span><span class="tech" data-cat="data"><i></i>ElasticSearch · Kibana</span>
+        <span class="tech" data-cat="devops"><i></i>Docker</span><span class="tech" data-cat="devops"><i></i>Kubernetes</span><span class="tech" data-cat="devops"><i></i>Git</span><span class="tech" data-cat="devops"><i></i>Bash · Linux</span><span class="tech" data-cat="devops"><i></i>Scrum · Scrum Master</span><span class="tech" data-cat="devops"><i></i>Cycles de qualification</span><span class="tech" data-cat="devops"><i></i>Outils de ticketing</span>
+      </div>
+      <p class="stack-empty" id="stackEmpty">Aucun résultat. Essayez un autre mot, ou écrivez-nous : la stack s'apprend.</p>
+      <div class="stack-foot"><span><i style="background:var(--jaune)"></i>Applications métiers</span><span><i style="background:var(--bleu)"></i>Mobile &amp; IA</span><span><i style="background:var(--rouge)"></i>Web</span><span><i style="background:var(--vert)"></i>Data</span><span><i style="background:var(--encre)"></i>DevOps &amp; méthodes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section class="s-noir" id="apropos" data-theme="noir">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="sec-head rv">
+      <div><p class="lbl">// 07 · à propos</p><h2 class="h2 sw">ZingiTech, depuis 2026.</h2></div>
+      <p>Une structure d'ingénierie logicielle fondée à Compiègne, qui réunit les missions pour les entreprises et l'édition de produits numériques.</p>
+    </div>
+    <div class="apropos">
+      <div class="rv">
+        <p class="big">ZingiTech est la structure de <em>Brandon Z.</em>, ingénieur logiciel. Elle réunit deux activités : les missions d'ingénierie pour les entreprises, et l'édition de produits numériques, Scansa en tête.</p>
+        <div class="txt">
+          <p>Immatriculée au registre du commerce de Compiègne en mars 2026, ZingiTech est née d'un constat simple : les entreprises ont besoin d'ingénieurs capables de reprendre un logiciel métier existant sans tout casser, et de livrer un produit complet quand il faut partir de zéro.</p>
+          <p>Six années passées sur des applications RH, paie, administratives et juridiques ont forgé une méthode : comprendre l'existant avant de le changer, mesurer avant d'optimiser, et mettre en production sans surprise. Scansa, conçue et publiée en autonomie sur les deux stores, applique la même exigence à un produit grand public.</p>
+        </div>
+        <div class="valeurs">
+          <div class="valeur"><b>Fiabilité</b><p>Un logiciel métier doit tourner le lundi matin. Tout le reste découle de là.</p></div>
+          <div class="valeur"><b>Autonomie</b><p>Un incident se prend en charge jusqu'au bout, sans attendre qu'on le demande.</p></div>
+          <div class="valeur"><b>Clarté</b><p>Des réponses directes aux équipes métier, sans jargon inutile.</p></div>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="lockup" aria-hidden="true"><svg class="emb" viewBox="0 0 1000 484"><use href="#emb"/></svg><div class="lk-word">Zingitech</div><div class="lk-sub">Depuis 2026</div></div>
+        <div class="fiche">
+          <dl>
+            <dt>Fondateur</dt><dd>Brandon Z., ingénieur logiciel</dd>
+            <dt>Structure</dt><dd>Entrepreneur individuel immatriculé au RCS de Compiègne</dd>
+            <dt>Depuis</dt><dd>Mars 2026</dd>
+            <dt>Base</dt><dd>Compiègne, Hauts-de-France · missions sur site, hybrides ou à distance</dd>
+            <dt>Formation</dt><dd>Licence professionnelle conception et développement web et applications · BTS SIO option SLAM · certification Data, Machine Learning, Big Data et DevOps (400 h, 18 certifications)</dd>
+            <dt>Hors écran</dt><dd>Nouvelles technologies et intelligence artificielle · NBA</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT : BRIEF ============ -->
+<section class="s-blanc" id="contact" data-theme="blanc">
+  <div class="chev" aria-hidden="true"></div>
+  <div class="wrap sec">
+    <div class="contact">
+      <div class="rv">
+        <p class="lbl">// 08 · contact</p>
+        <h2 class="h2 sw">Discutons de votre projet.</h2>
+        <p class="lead">Une mission à pourvoir, une application à créer, un logiciel à reprendre : écrivez-nous. Les tarifs et conditions sont communiqués sur demande.</p>
+        <div class="mail"><a href="mailto:contact@zingitech.fr">contact@zingitech.fr</a><button class="copy" type="button" id="copyMail">Copier</button></div>
+        <ul class="infos">
+          <li>Disponible pour de nouvelles missions : régie via ESN, portage, courte ou longue durée</li>
+          <li>Sur site, hybride ou à distance</li>
+          <li>Entreprise immatriculée au RCS de Compiègne</li>
+        </ul>
+        <form class="brief" id="brief" novalidate>
+          <div class="grp"><span class="lb">Besoin</span><div class="opts" role="group" aria-label="Besoin">
+            <button class="opt on" type="button" data-g="besoin" data-v="Mission en régie ou en portage">Mission en régie ou en portage</button>
+            <button class="opt" type="button" data-g="besoin" data-v="Application mobile">Application mobile</button>
+            <button class="opt" type="button" data-g="besoin" data-v="Site web ou e-commerce">Site web ou e-commerce</button>
+            <button class="opt" type="button" data-g="besoin" data-v="Data et automatisation">Data et automatisation</button>
+            <button class="opt" type="button" data-g="besoin" data-v="Autre">Autre</button>
+          </div></div>
+          <div class="grp"><span class="lb">Format</span><div class="opts" role="group" aria-label="Format">
+            <button class="opt on" type="button" data-g="format" data-v="Régie via ESN">Régie via ESN</button>
+            <button class="opt" type="button" data-g="format" data-v="Portage">Portage</button>
+            <button class="opt" type="button" data-g="format" data-v="Forfait clé en main">Forfait clé en main</button>
+            <button class="opt" type="button" data-g="format" data-v="À définir">À définir</button>
+          </div></div>
+          <div class="grp"><span class="lb">Durée</span><div class="opts" role="group" aria-label="Durée">
+            <button class="opt" type="button" data-g="duree" data-v="Courte (moins de 3 mois)">Courte</button>
+            <button class="opt on" type="button" data-g="duree" data-v="Longue (3 mois et plus)">Longue</button>
+            <button class="opt" type="button" data-g="duree" data-v="À définir">À définir</button>
+          </div></div>
+          <div class="grp"><span class="lb">Lieu</span><div class="opts" role="group" aria-label="Lieu">
+            <button class="opt" type="button" data-g="lieu" data-v="Sur site">Sur site</button>
+            <button class="opt on" type="button" data-g="lieu" data-v="Hybride">Hybride</button>
+            <button class="opt" type="button" data-g="lieu" data-v="À distance">À distance</button>
+          </div></div>
+          <div class="grp"><span class="lb">Démarrage</span><div class="opts" role="group" aria-label="Démarrage">
+            <button class="opt on" type="button" data-g="demarrage" data-v="Dès que possible">Dès que possible</button>
+            <button class="opt" type="button" data-g="demarrage" data-v="Sous 1 mois">Sous 1 mois</button>
+            <button class="opt" type="button" data-g="demarrage" data-v="Sous 3 mois">Sous 3 mois</button>
+            <button class="opt" type="button" data-g="demarrage" data-v="Plus tard">Plus tard</button>
+          </div></div>
+          <div class="champs">
+            <div class="champ"><label for="f-nom">Nom</label><input id="f-nom" name="nom" type="text" autocomplete="name"></div>
+            <div class="champ"><label for="f-soc">Société</label><input id="f-soc" name="societe" type="text" autocomplete="organization"></div>
+            <div class="champ"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+            <div class="champ"><label for="f-tech">Technologies</label><input id="f-tech" name="techs" type="text" placeholder="WinDev, SQL Server, React Native…"></div>
+            <div class="champ full"><label for="f-msg">Contexte</label><textarea id="f-msg" name="message" placeholder="L'application, l'équipe, ce qui doit être livré…"></textarea></div>
+          </div>
+        </form>
+      </div>
+      <div class="bpre rv">
+        <figure class="codecard">
+          <figcaption><span><span class="dots"><i></i><i></i><i></i></span>brief.txt</span><button class="copy" type="button" id="copyBrief">Copier</button></figcaption>
+          <pre id="bpre" aria-live="polite"></pre>
+        </figure>
+        <div class="brief-act">
+          <a class="btn btn-plein" id="openMail" href="mailto:contact@zingitech.fr">Ouvrir dans ma messagerie</a>
+          <p class="legal">Le brief s'ouvre dans votre messagerie, prêt à envoyer à contact@zingitech.fr. Aucune donnée n'est stockée sur ce site.</p>
+        </div>
+        <p class="form-msg" id="formMsg" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="s-noir foot" data-theme="noir">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#accueil"><svg class="emb" viewBox="0 0 1000 484" aria-hidden="true"><use href="#emb"/></svg><b>Zingitech</b></a>
+        <p>Développement, édition et exploitation d'applications mobiles et de logiciels. Entrepreneur individuel immatriculé au RCS de Compiègne.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul><li><a href="#services">Services</a></li><li><a href="#scansa">Scansa</a></li><li><a href="#parcours">Parcours</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#bac">Bac à sable</a></li><li><a href="#apropos">À propos</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Scansa</h3>
+        <ul><li><a href="https://apps.apple.com/fr/app/scansa/id6758580692" target="_blank" rel="noopener">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.zingila.leaselens&amp;hl=fr" target="_blank" rel="noopener">Google Play</a></li><li><a href="https://scansa.fr" target="_blank" rel="noopener">scansa.fr</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul><li><a href="mailto:contact@zingitech.fr">contact@zingitech.fr</a></li><li>Compiègne (Oise)</li><li><a href="mentions.html">Mentions légales</a></li><li><a href="mentions.html#confidentialite">Confidentialité</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ZingiTech · RCS Compiègne 102 077 203</span><span>Conçu et codé par ZingiTech</span></div>
+  </div>
+</footer>
+<button id="toTop" aria-label="Revenir en haut"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg></button>
+
+<div class="pal" id="pal" role="dialog" aria-modal="true" aria-label="Palette de navigation" hidden>
+  <div class="pal-box">
+    <div class="pal-in"><span class="pr">&gt;</span><input id="palq" type="text" placeholder="Aller à une section, copier l'e-mail, ouvrir Scansa…" autocomplete="off" spellcheck="false" aria-label="Rechercher une section ou une action"></div>
+    <ul class="pal-list" id="pallist" role="listbox"></ul>
+    <div class="pal-empty" id="palEmpty" hidden>Rien ne correspond.</div>
+    <div class="pal-foot"><span>↑ ↓ naviguer</span><span>↵ ouvrir</span><span>échap fermer</span></div>
+  </div>
+</div>
+
+<script type="text/x-wl" id="wl1">// Run applicatif : incident critique sur un lot de paie
+PROCEDURE CorrigerLotPaie(nIDLot est un entier)
+nAnomalies est un entier = 0
+dhDebut est un DateHeure = DateHeureSys()
+
+HLitRecherche(BulletinPaie, IDLot, nIDLot)
+TANTQUE HTrouve(BulletinPaie)
+    SI BulletinPaie.MontantNet < 0 ALORS
+        nAnomalies++
+        BulletinPaie.Statut = "A_RECALCULER"
+        HModifie(BulletinPaie)
+        Trace(ChaîneConstruit("Bulletin %1 : net négatif", BulletinPaie.ID))
+    FIN
+    HLitSuivant(BulletinPaie, IDLot)
+FIN
+
+SI nAnomalies > 0 ALORS
+    RecalculerLot(nIDLot)
+    Journal("Lot " + nIDLot + " corrigé, " + nAnomalies + " bulletins")
+FIN
+RENVOYER nAnomalies</script>
+<script type="text/x-wl" id="wl2">// Web Service SOAP : consultation d'un dossier par le SI
+PROCEDURE ConsulterDossier(sNumero est une chaîne) : STDossier
+stDossier est un STDossier
+
+SI PAS VérifieExpressionRégulière(sNumero, "[0-9]{4}/[0-9]{6}") ALORS
+    ErreurDéclenche(1001, "Numéro de dossier invalide : " + sNumero)
+FIN
+
+HLitRecherchePremier(Dossier, Numero, sNumero)
+SI PAS HTrouve(Dossier) ALORS
+    ErreurDéclenche(1002, "Dossier introuvable")
+FIN
+
+stDossier.Numero  = Dossier.Numero
+stDossier.Etat    = Dossier.Etat
+stDossier.DateMAJ = Dossier.DateMAJ
+POUR TOUT Piece AVEC Piece.IDDossier = Dossier.ID
+    Ajoute(stDossier.Pieces, Piece.Libelle)
+FIN
+RENVOYER stDossier</script>
+<script type="text/x-wl" id="wl3">// Migration HFSQL vers SQL Server, par lots de 500
+PROCEDURE MigrerTable(sTable est une chaîne, nTailleLot est un entier = 500)
+cnxSQL est une Connexion
+cnxSQL.Provider = hAccèsNatifSQLServer
+cnxSQL.Serveur = "SRV-SQL\INSTANCE"
+cnxSQL.BaseDeDonnées = "BASE_PROD"
+HOuvreConnexion(cnxSQL)
+HChangeConnexion(sTable + "_SQL", cnxSQL)
+
+nLus est un entier = 0
+HTransactionDébut(cnxSQL)
+POUR TOUT {sTable, indFichier}
+    HCopieEnreg({sTable, indFichier}, {sTable + "_SQL", indFichier})
+    HAjoute({sTable + "_SQL", indFichier})
+    nLus++
+    SI modulo(nLus, nTailleLot) = 0 ALORS
+        HTransactionFin(cnxSQL)
+        HTransactionDébut(cnxSQL)
+    FIN
+FIN
+HTransactionFin(cnxSQL)
+Trace(ChaîneConstruit("%1 : %2 lignes migrées", sTable, nLus))</script>
+<script type="text/x-wl" id="wl4">// ZingiTech : état du planning
+PROCEDURE Disponibilite() : chaîne
+bDisponible est un booléen = Vrai
+tabFormats est un tableau de chaînes = ["régie", "portage", "courte durée", "longue durée"]
+tabLieux est un tableau de chaînes = ["sur site", "hybride", "à distance"]
+
+SI PAS bDisponible ALORS
+    RENVOYER "Planning complet, reprise de contact à prévoir"
+FIN
+
+sMessage est une chaîne = "Disponible pour de nouvelles missions"
+sMessage += " : " + TableauVersChaîne(tabFormats, ", ")
+sMessage += " · " + TableauVersChaîne(tabLieux, ", ")
+RENVOYER sMessage</script>
+<script src="assets/wlrun.js" defer></script>
+<script>
+(function(){
+'use strict';
+var H=document.documentElement; H.classList.add('js');
+window.addEventListener('error',function(){H.classList.add('noanim');});
+var RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var FINE=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+function $(s,c){return (c||document).querySelector(s);}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));}
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function nfd(s){return String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();}
+function pad2(n){return (n<10?'0':'')+n;}
+
+/* ---------- coloration ---------- */
+var WLK=/^(PROCEDURE|PROCÉDURE|RENVOYER|RETOUR|SI|ALORS|SINON|FIN|POUR|TOUT|TOUTE|AVEC|TANTQUE|BOUCLE|SELON|CAS|AUTRE|est|un|une|de|des|entier|chaîne|chaînes|booléen|réel|réels|DateHeure|Date|Connexion|tableau|PAS|ET|OU|modulo|Vrai|Faux|Null|INTERNE|Structure|associatif|Variant|Buffer|dynamique|_À_|À|SORTIR|CONTINUER|ARRÊTER|ARRETER)$/;
+var KW={ts:'export async function const let var return if else await throw new true false null import from type interface'.split(' '),php:'function return if else global true false null use as foreach echo'.split(' '),py:'with as def return import from if else elif for in not and or True False None class'.split(' '),sql:'WITH AS SELECT FROM ORDER BY LIMIT WHERE AND OR GROUP SUM DESC UNION ALL ON JOIN CREATE POLICY FOR USING UPDATE OVER'.split(' ')};
+function tok(line,lang){
+  var out=[],i=0,n=line.length,c,j,w,cls; var cm=lang==='py'?'#':(lang==='sql'?'--':'//');
+  while(i<n){ c=line[i];
+    if(line.substr(i,cm.length)===cm){out.push([line.slice(i),'c']);break;}
+    if(c==='"'||c==="'"||c==='`'){j=i+1;while(j<n&&line[j]!==c)j++;out.push([line.slice(i,j+1),'s']);i=j+1;continue;}
+    if(/[0-9]/.test(c)&&!/[A-Za-zÀ-ÿ_]/.test(line[i-1]||' ')){j=i;while(j<n&&/[0-9.]/.test(line[j]))j++;out.push([line.slice(i,j),'n']);i=j;continue;}
+    if(c==='$'&&lang==='php'){j=i+1;while(j<n&&/[A-Za-z0-9_]/.test(line[j]))j++;out.push([line.slice(i,j),'v']);i=j;continue;}
+    if(/[A-Za-zÀ-ÿ_]/.test(c)){j=i;while(j<n&&/[A-Za-zÀ-ÿ0-9_]/.test(line[j]))j++;w=line.slice(i,j);cls='i';
+      if(lang==='wl'){ if(WLK.test(w))cls='k'; else if(/^h[A-Z]/.test(w))cls='n'; else if(line[j]==='(')cls='f'; }
+      else { var kw=KW[lang]||[]; if(kw.indexOf(w)>=0)cls='k'; else if(line[j]==='(')cls='f'; }
+      out.push([w,cls]);i=j;continue;}
+    j=i;while(j<n&&!/[A-Za-zÀ-ÿ0-9_"'`$]/.test(line[j])&&line.substr(j,cm.length)!==cm)j++; if(j===i)j=i+1;
+    out.push([line.slice(i,j),'p']);i=j; }
+  return out; }
+function html(tokens,limit){var s='',used=0;for(var k=0;k<tokens.length;k++){var t=tokens[k][0];if(limit!=null){if(used>=limit)break;if(used+t.length>limit)t=t.slice(0,limit-used);}used+=t.length;s+='<span class="'+tokens[k][1]+'">'+esc(t)+'</span>';}return s;}
+function colorize(pre,lang){var src=pre.textContent.split('\n');pre.innerHTML=src.map(function(l){return html(tok(l,lang));}).join('\n');}
+$$('.codecard pre').forEach(function(p){colorize(p,p.getAttribute('data-lang'));});
+
+/* ---------- titres : mots révélés un à un ---------- */
+$$('.sw').forEach(function(h){
+  var words=h.textContent.trim().split(/\s+/),i=0;
+  h.innerHTML=words.map(function(w){return '<span class="w"><span style="--i:'+(i++)+'">'+esc(w)+'</span></span>';}).join(' ');
+});
+
+/* ---------- hero : lignes de code dispersées → un seul projet clair ---------- */
+(function(){
+var ORDER=[4,1,2,3];
+var files=ORDER.map(function(i){return $('#wl'+i).textContent.replace(/^\n/,'').split('\n');});
+var codeEl=$('#code'),tabs=$$('#tabs span'),consoleEl=$('#console'),hero=$('#accueil'),win=$('#win'),cap=$('#capTxt');
+var fx=$('#fx'),ctx=fx&&fx.getContext?fx.getContext('2d'):null;
+var MONO="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace";
+var COL={k:'#86ccff',s:'#ff6b6b',c:'#5fe29c',n:'#ffd36b',f:'#ffd36b',p:'#8b8f99',i:'#e6e6ea',v:'#e6e6ea'};
+var MOB=window.innerWidth<=980,DPR=Math.min(window.devicePixelRatio||1,2),FINE=!window.matchMedia||window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+var fi=0,li=0,ci=0,timer=null,running=false,visible=true,lineEl=null,lineNo=1,lineH=22,maxLines=18,lcOff=62,padTop=12;
+var DISPO='Disponible : régie, portage, courte ou longue durée';
+function setCap(t,ok){if(cap){cap.textContent=t;cap.classList.toggle('ok',!!ok);}}
+function measure(){var p=document.createElement('div');p.className='l';p.innerHTML='<span class="ln">1</span><span class="lc">x</span>';codeEl.appendChild(p);var pr=p.getBoundingClientRect(),lr=$('.lc',p).getBoundingClientRect();lineH=pr.height||22;lcOff=lr.left-pr.left;padTop=parseFloat(getComputedStyle(codeEl).paddingTop)||12;codeEl.removeChild(p);maxLines=Math.max(8,Math.floor((codeEl.clientHeight-padTop-2)/lineH));}
+function newLine(){var d=document.createElement('div');d.className='l';d.innerHTML='<span class="ln">'+(lineNo++)+'</span><span class="lc"></span>';codeEl.appendChild(d);while(codeEl.children.length>maxLines)codeEl.removeChild(codeEl.firstChild);return d;}
+var ctimer=null;
+function setConsole(txt){clearInterval(ctimer);consoleEl.innerHTML='<span class="pr">&#9654;</span><span class="ok"></span>';var ok=$('.ok',consoleEl),k=0;ctimer=setInterval(function(){k+=2;ok.textContent=txt.slice(0,k);if(k>=txt.length)clearInterval(ctimer);},14);}
+function clearCode(cb){codeEl.querySelectorAll('.l').forEach(function(l){l.classList.add('bye');});setTimeout(function(){codeEl.innerHTML='';lineNo=1;cb();},520);}
+/* frappe des autres projets (fichiers 1 à 3) */
+function tick(){
+  if(!visible||!running){timer=setTimeout(tick,300);return;}
+  var lines=files[fi];
+  if(li>=lines.length){running=false;setCap('terminé · 0 erreur · 0 avertissement',true);timer=setTimeout(function(){clearCode(nextFile);},2600);return;}
+  var line=lines[li];
+  if(!lineEl){lineEl=newLine();}
+  var lc=$('.lc',lineEl);
+  ci+=1+(Math.random()<.35?1:0)+(line[ci]===' '?1:0);
+  if(ci>line.length)ci=line.length;
+  lc.innerHTML=html(tok(line,'wl'),ci)+'<span class="caret"></span>';
+  if(ci>=line.length){lc.innerHTML=html(tok(line,'wl'));li++;ci=0;lineEl=null;timer=setTimeout(tick,line.trim()?140+Math.random()*120:60);}
+  else timer=setTimeout(tick,16+Math.random()*26);
+}
+function nextFile(){fi=(fi+1)%files.length;li=0;ci=0;lineEl=null;lineNo=1;tabs.forEach(function(t,k){t.classList.toggle('on',k===fi);});consoleEl.innerHTML='';if(fi===0)converge(true);else{setCap('en cours · '+tabs[fi].textContent);running=true;tick();}}
+
+/* ---- moteur canvas : fragments de code ---- */
+var W=0,HH=0,charW=7.5,FS=12.5,FONT='',fA=0,fD=0,S=[],prog=[],dom=[],phase='idle',raf=0,last=0,tBase=0,pullT=null,idleAmb=false,sized=false;
+function setFont(){FS=MOB?11.5:12.5;FONT='400 '+FS+'px '+MONO;ctx.font=FONT;var m=ctx.measureText('0');charW=m.width||7.5;fA=m.fontBoundingBoxAscent||0;fD=m.fontBoundingBoxDescent||0;}
+function sizeFx(){if(!ctx)return;var r=hero.getBoundingClientRect();W=Math.round(r.width);HH=Math.round(r.height);fx.width=Math.round(W*DPR);fx.height=Math.round(HH*DPR);fx.style.width=W+'px';fx.style.height=HH+'px';ctx.setTransform(DPR,0,0,DPR,0,0);setFont();sized=true;}
+function sprite(toks){var w=0,k,dm='i';for(k=0;k<toks.length;k++){w+=toks[k][0].length*charW;if(dm==='i'&&toks[k][1]!=='p'&&toks[k][1]!=='i')dm=toks[k][1];}
+  var c=document.createElement('canvas');c.width=Math.max(2,Math.ceil((w+2)*DPR));c.height=Math.ceil(lineH*DPR);var g=c.getContext('2d');g.scale(DPR,DPR);g.font=FONT;var by=lineH/2;if(fA){g.textBaseline='alphabetic';by=lineH/2+(fA-fD)/2;}else{g.textBaseline='middle';by+=1;}var x=1;
+  for(k=0;k<toks.length;k++){g.fillStyle=COL[toks[k][1]]||COL.i;g.fillText(toks[k][0],x,by);x+=toks[k][0].length*charW;}
+  return {img:c,w:w+2,col:COL[dm]||COL.i};}
+function chunks(line){var toks=tok(line,'wl'),out=[],cur=[],len=0,start=0,k;
+  for(k=0;k<toks.length;k++){cur.push(toks[k]);len+=toks[k][0].length;
+    if(out.length<3&&len>=7&&toks[k][1]==='p'&&k<toks.length-1&&Math.random()<.65){out.push({toks:cur,off:start});start+=len;cur=[];len=0;}}
+  if(cur.length)out.push({toks:cur,off:start});return out;}
+function mk(toks,line,off,ab){var sp=sprite(toks);return {toks:toks,img:sp.img,w:sp.w,col:sp.col,line:line,off:off,ab:ab,x:0,y:0,vx:0,vy:0,rot:0,rv:0,sc:1,al:1,mode:'free',born:0,t0:0,ts:0,dur:1000,p0:null,p1:null,r0:0,s0:1,a0:1,trail:[]};}
+function edgeSpawn(s,ts){var a=Math.random()*Math.PI*2,rx=W/2+150,ry=HH/2+150;s.x=W/2+Math.cos(a)*rx;s.y=HH/2+Math.sin(a)*ry;
+  var tx=W*(.1+Math.random()*.8),ty=HH*(.1+Math.random()*.8),dx=tx-s.x,dy=ty-s.y,d=Math.hypot(dx,dy)||1,dep=.75+Math.random()*.55,v=(230+Math.random()*300)*dep;
+  s.vx=dx/d*v;s.vy=dy/d*v;s.sc=dep;s.al=Math.min(1,.5+dep*.45);s.rot=(Math.random()-.5)*1.1;s.rv=(Math.random()-.5)*.5;s.born=ts;s.trail.length=0;}
+function burstSpawn(s,ts,cr){s.x=cr.x+Math.random()*cr.w;s.y=cr.y+Math.random()*cr.h;var dx=s.x-(cr.x+cr.w/2),dy=s.y-(cr.y+cr.h/2),a=Math.atan2(dy,dx)+(Math.random()-.5)*1.3,v=280+Math.random()*440;
+  s.vx=Math.cos(a)*v;s.vy=Math.sin(a)*v;s.sc=.75+Math.random()*.4;s.al=.6+Math.random()*.4;s.rot=0;s.rv=(Math.random()-.5)*1.4;s.born=ts;s.trail.length=0;}
+function ambSpawn(s,ts){edgeSpawn(s,ts);var v=Math.hypot(s.vx,s.vy)||1,nv=26+Math.random()*44;s.vx*=nv/v;s.vy*=nv/v;s.al=.13+Math.random()*.1;s.sc=.8+Math.random()*.3;s.rv=(Math.random()-.5)*.08;}
+function codeRect(){var hr=hero.getBoundingClientRect(),cr=codeEl.getBoundingClientRect();return {x:cr.left-hr.left,y:cr.top-hr.top,w:cr.width,h:cr.height};}
+function randLine(){var pool=files.slice(1),L,line;do{L=pool[(Math.random()*pool.length)|0];line=L[(Math.random()*L.length)|0];}while(!line.trim());return line;}
+function ensureAmb(){if(MOB||RM||!ctx||!FINE)return;var have=0,k;for(k=0;k<S.length;k++)if(S[k].mode==='amb')have++;var now=performance.now();
+  while(have<7){var ch=chunks(randLine()),c=ch[(Math.random()*ch.length)|0],z=mk(c.toks,0,0,true);z.mode='amb';ambSpawn(z,now);S.push(z);have++;}if(!sized)sizeFx();kick();}
+function prepare(n){codeEl.innerHTML='';lineNo=1;dom=[];for(var i=0;i<n;i++){var d=newLine();if(prog[i].trim())d.classList.add('pre');dom.push(d);}}
+function converge(rep){
+  if(!ctx){staticFill();return;}
+  if(!sized)sizeFx();idleAmb=false;
+  phase='chaos';hero.classList.remove('set');running=false;
+  var now=performance.now(),CH=rep?1500:2500,cr=codeRect(),i,k;
+  prog=buildProg();
+  S=S.filter(function(s){return s.mode==='amb';});
+  var n=prog.length,frag=0;
+  for(i=0;i<n;i++){if(!prog[i].trim())continue;var ch=chunks(prog[i]);
+    for(k=0;k<ch.length;k++){var s=mk(ch[k].toks,i,ch[k].off,false);if(rep)burstSpawn(s,now+Math.random()*260,cr);else edgeSpawn(s,now+Math.random()*900);
+      s.t0=CH+i*(1150/n)+k*70+Math.random()*160;s.dur=850+Math.random()*350;S.push(s);frag++;}}
+  var NZ=MOB?14:34;
+  for(i=0;i<NZ;i++){var ch2=chunks(randLine()),c2=ch2[(Math.random()*ch2.length)|0],z=mk(c2.toks,(Math.random()*n)|0,0,true);
+    if(rep)burstSpawn(z,now+Math.random()*260,cr);else edgeSpawn(z,now+Math.random()*900);z.t0=CH+Math.random()*900;z.dur=900+Math.random()*400;S.push(z);}
+  setCap((frag+NZ)+' fragments de code · dispersés');
+  tBase=now;clearTimeout(pullT);
+  pullT=setTimeout(function(){hero.classList.add('pull');prepare(n);setCap('rassemblement en un seul projet…');phase='pull';},CH-650);
+  kick();
+}
+function land(i,ts){var k,s;for(k=0;k<S.length;k++){s=S[k];if(!s.ab&&s.mode!=='amb'&&s.line===i&&s.mode!=='done')return;}for(k=0;k<S.length;k++){s=S[k];if(s.mode==='done'&&s.line===i&&s.hold){s.hold=false;s.ts=ts;}}var d=dom[i];if(d&&d.classList.contains('pre')){d.classList.remove('pre');$('.lc',d).innerHTML=html(tok(prog[i],'wl'));}}
+function finish(){phase='set';hero.classList.add('set');setCap('1 projet clair · '+prog.length+' lignes · 0 erreur',true);setConsole(DISPO);clearTimeout(timer);timer=setTimeout(function(){clearCode(nextFile);},7000);ensureAmb();}
+function step(dt,ts){var CR=null,i,s,pending=0,busy=0;
+  for(i=S.length-1;i>=0;i--){s=S[i];
+    if(!s.ab&&s.mode!=='amb'&&s.mode!=='done')pending++;
+    if(s.mode!=='amb')busy++;
+    if(ts<s.born)continue;
+    if(s.mode==='free'||s.mode==='amb'){s.x+=s.vx*dt;s.y+=s.vy*dt;s.rot+=s.rv*dt;
+      if(s.x<-240||s.x>W+240||s.y<-170||s.y>HH+170){if(s.mode==='amb')ambSpawn(s,ts);else edgeSpawn(s,ts);}
+      if(s.mode==='free'&&phase==='pull'&&ts>=tBase+s.t0){s.mode=s.ab?'absorb':'pull';s.ts=ts;s.p0={x:s.x,y:s.y};s.p1={x:s.x+s.vx*.4,y:s.y+s.vy*.4};s.r0=s.rot;s.s0=s.sc;s.a0=s.al;}
+    }
+    if(s.mode==='pull'||s.mode==='absorb'){if(!CR)CR=codeRect();var u=Math.min(1,(ts-s.ts)/s.dur),e=u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2,q=1-e;
+      var tx=CR.x+lcOff+s.off*charW-1,ty=CR.y+padTop+s.line*lineH+lineH/2;if(s.mode==='absorb'){tx+=CR.w*.3;}
+      var p2x=tx-90,p2y=ty;
+      s.x=q*q*q*s.p0.x+3*q*q*e*s.p1.x+3*q*e*e*p2x+e*e*e*tx;
+      s.y=q*q*q*s.p0.y+3*q*q*e*s.p1.y+3*q*e*e*p2y+e*e*e*ty;
+      s.rot=s.r0*(1-e);
+      if(s.mode==='pull'){s.sc=s.s0+(1-s.s0)*e;s.al=s.a0+(1-s.a0)*e;if(u>=1){s.mode='done';s.hold=true;s.ts=ts;s.x=tx;s.y=ty;s.rot=0;s.sc=1;s.al=1;land(s.line,ts);}}
+      else{s.sc=s.s0*(1-.5*e);s.al=s.a0*Math.max(0,1-e*1.25);if(u>=1){S.splice(i,1);continue;}}
+    }
+    if(s.mode==='done'){s.al=s.hold?1:Math.max(0,1-(ts-s.ts)/240);if(s.al<=0){S.splice(i,1);continue;}}
+    if(s.mode!=='done'&&s.mode!=='amb'){s.trail.push(s.x,s.y);if(s.trail.length>40)s.trail.splice(0,2);}
+  }
+  if(phase==='pull'&&pending===0)finish();
+  return busy;
+}
+function draw(ts){ctx.clearRect(0,0,W,HH);var cr=null;for(var i=0;i<S.length;i++){var s=S[i];if(ts<s.born)continue;
+  if(s.trail.length>=6&&s.mode!=='done'){ctx.globalAlpha=.26*s.al;ctx.strokeStyle=s.col;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(s.trail[0],s.trail[1]);for(var k=2;k<s.trail.length;k+=2)ctx.lineTo(s.trail[k],s.trail[k+1]);ctx.stroke();}
+  var clip=(s.mode==='pull'||s.mode==='absorb'||s.mode==='done');if(clip){if(!cr)cr=codeRect();ctx.save();ctx.setTransform(DPR,0,0,DPR,0,0);ctx.beginPath();ctx.rect(cr.x,cr.y,cr.w,cr.h);ctx.clip();}
+  ctx.globalAlpha=Math.max(0,Math.min(1,s.al));ctx.setTransform(DPR*s.sc*Math.cos(s.rot),DPR*s.sc*Math.sin(s.rot),-DPR*s.sc*Math.sin(s.rot),DPR*s.sc*Math.cos(s.rot),DPR*s.x,DPR*s.y);ctx.drawImage(s.img,0,-lineH/2,s.w,lineH);if(clip)ctx.restore();}
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.globalAlpha=1;}
+function loop(ts){raf=0;if(!visible||!ctx)return;if(idleAmb&&last&&ts-last<30){raf=requestAnimationFrame(loop);return;}var dt=last?Math.min(.05,(ts-last)/1000):0;last=ts;idleAmb=step(dt,ts)===0;draw(ts);if(S.length)raf=requestAnimationFrame(loop);else release();}
+function release(){if(!sized)return;fx.width=0;fx.height=0;sized=false;}
+function kick(){if(ctx&&!raf&&visible){last=0;raf=requestAnimationFrame(loop);}}
+function buildProg(){var p=files[0];if(MOB||p.length>maxLines)p=p.filter(function(l){return l.trim();});if(p.length>maxLines)p=p.slice(0,maxLines);return p;}
+function staticFill(){prog=buildProg();hero.classList.add('pull');hero.classList.add('set');codeEl.innerHTML='';lineNo=1;prog.forEach(function(l){var d=newLine();$('.lc',d).innerHTML=html(tok(l,'wl'));});setConsole(DISPO);setCap('1 projet clair · '+prog.length+' lignes · 0 erreur',true);}
+function rebuild(){S.forEach(function(s){var sp=sprite(s.toks);s.img=sp.img;s.w=sp.w;});}
+var rzT=null;function onResize(){clearTimeout(rzT);rzT=setTimeout(doResize,150);}
+function doResize(){if(!started||!ctx)return;var r=hero.getBoundingClientRect(),w=Math.round(r.width),h=Math.round(r.height),m=window.innerWidth<=980,d=Math.min(window.devicePixelRatio||1,2);
+  if(w===W&&h===HH&&m===MOB&&d===DPR)return;var wChanged=w!==W;DPR=d;
+  if(m!==MOB){MOB=m;if(MOB)S=S.filter(function(s){return s.mode!=='amb';});}
+  if(S.length||sized)sizeFx();else{W=w;HH=h;setFont();}measure();rebuild();
+  if(wChanged&&(phase==='chaos'||phase==='pull')&&!RM){codeEl.innerHTML='';lineNo=1;converge(false);}else if(phase==='set')ensureAmb();}
+function refont(){if(!ctx)return;setFont();measure();rebuild();}
+var started=false;
+function start(){if(started)return;started=true;sizeFx();measure();if(RM||!ctx){staticFill();return;}converge(false);ensureAmb();}
+if(document.fonts&&document.fonts.load){document.fonts.load('12.5px "JetBrains Mono"').then(function(){if(started)refont();else start();},start);setTimeout(start,900);}else setTimeout(start,250);
+window.addEventListener('resize',onResize);
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){var was=visible;visible=e.isIntersecting;if(visible&&!was&&started&&ctx&&!RM&&(phase==='chaos'||phase==='pull')){clearTimeout(pullT);codeEl.innerHTML='';lineNo=1;converge(false);}else if(visible)kick();});},{threshold:0}).observe(hero);}
+/* arrivée du texte */
+setTimeout(function(){hero.classList.add('in');},RM?0:120);
+/* inclinaison de la fenêtre au pointeur, une fois le projet posé (bureau) */
+if(FINE&&!RM&&win){
+  hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;win.style.setProperty('--rx',(x*5).toFixed(2)+'deg');win.style.setProperty('--ry',(-y*4).toFixed(2)+'deg');});
+  hero.addEventListener('pointerleave',function(){win.style.removeProperty('--rx');win.style.removeProperty('--ry');});
+}
+})();
+
+/* ---------- bandeau défilant ---------- */
+var stripSrc='SI bDisponible ALORS RENVOYER "Disponible pour de nouvelles missions" FIN  //  HLitRecherche(Dossier, Numero, sNumero)  //  POUR TOUT Piece AVEC Piece.IDDossier = Dossier.ID  //  HAjoute({sTable, indFichier})  //  Trace(ChaîneConstruit("%1 : %2 lignes migrées", sTable, nLus))  //  stDossier.Etat = Dossier.Etat  //  nAnomalies++  //  RENVOYER sMessage  //  ';
+$$('.strip-in').forEach(function(s){var h=html(tok(stripSrc.replace(/\/\/  /g,'   '),'wl'));s.innerHTML='<span>'+h+'</span><span>'+h+'</span>';});
+
+/* ---------- navigation, thème, progression, barre d'état ---------- */
+var nav=$('#nav'),prog=$('#prog'),toTop=$('#toTop'),stSec=$('#st-sec'),stPct=$('#st-pct'),stClock=$('#st-clock');
+var navLinks=$$('.nav-links a'),themed=$$('[data-theme]'),secs=$$('main section[id], header[id]');
+var ticking=false;
+function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(function(){ticking=false;
+  var y=window.scrollY||window.pageYOffset,h=document.documentElement.scrollHeight-window.innerHeight;
+  var probe=36,theme='noir';
+  for(var i=0;i<themed.length;i++){var r=themed[i].getBoundingClientRect();if(r.top<=probe&&r.bottom>probe){theme=themed[i].getAttribute('data-theme');break;}}
+  nav.setAttribute('data-theme',theme);
+  nav.classList.toggle('small',y>40);
+  var mid=window.innerHeight*.45,cur=null;
+  for(var k=0;k<secs.length;k++){var rr=secs[k].getBoundingClientRect();if(rr.top<=mid&&rr.bottom>mid){cur=secs[k].id;break;}}
+  if(!cur)cur=y<200?'accueil':secs[secs.length-1].id;
+  navLinks.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+  var p=h>0?Math.min(1,y/h):0;
+  prog.style.transform='scaleX('+p+')';
+  if(stSec)stSec.textContent=cur;
+  if(stPct)stPct.textContent=Math.round(p*100);
+  toTop.classList.toggle('show',y>window.innerHeight*1.2);
+  revealCheck();railScroll();
+});}
+window.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('pageshow',onScroll);
+toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:RM?'auto':'smooth'});});
+function clock(){var d=new Date();if(stClock)stClock.textContent=pad2(d.getHours())+':'+pad2(d.getMinutes());}
+clock();setInterval(clock,20000);
+
+/* ---------- menu mobile ---------- */
+var burger=$('#burger'),menu=$('#menu');
+function closeMenu(){menu.classList.remove('open');menu.setAttribute('aria-hidden','true');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Ouvrir le menu');H.classList.remove('lock');}
+burger.addEventListener('click',function(){var open=!menu.classList.contains('open');menu.classList.toggle('open',open);menu.setAttribute('aria-hidden',open?'false':'true');burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');H.classList.toggle('lock',open);});
+$$('a',menu).forEach(function(a){a.addEventListener('click',closeMenu);});
+window.addEventListener('resize',function(){if(window.innerWidth>980)closeMenu();});
+
+/* ---------- apparitions au défilement + compteurs ---------- */
+var rvs=$$('.rv');
+function count(el){if(el.dataset.done)return;el.dataset.done='1';var to=parseInt(el.getAttribute('data-count'),10),dur=RM?0:1100,t0=null;function f(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/dur);k=1-Math.pow(1-k,3);el.textContent=Math.round(to*k);if(k<1)requestAnimationFrame(f);else el.textContent=to;}if(dur)requestAnimationFrame(f);else el.textContent=to;}
+function show(el){if(el.classList.contains('in'))return;el.classList.add('in');$$('[data-count]',el).forEach(count);}
+function revealCheck(){var vh=window.innerHeight;rvs.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh*.92)show(el);});}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});rvs.forEach(function(el){io.observe(el);});}
+setTimeout(revealCheck,300);setTimeout(revealCheck,2500);setTimeout(function(){rvs.forEach(show);},9000);
+
+/* ---------- copie ---------- */
+function copyText(t,btn,ok){
+  function done(){if(!btn)return;var old=btn.getAttribute('data-label')||btn.textContent;btn.setAttribute('data-label',old);btn.textContent=ok||'Copié';setTimeout(function(){btn.textContent=old;},1600);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fallback();});}else fallback();
+  function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(ta);}
+}
+$$('.codecard .copy').forEach(function(b){b.addEventListener('click',function(){var pre=$('pre',b.closest('.codecard'));if(pre)copyText(pre.textContent,b);});});
+
+/* ---------- boutons magnétiques ---------- */
+if(FINE&&!RM){$$('.btn').forEach(function(b){
+  b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();var x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;b.style.transform='translate('+(x*.18).toFixed(1)+'px,'+(y*.28-2).toFixed(1)+'px)';});
+  b.addEventListener('pointerleave',function(){b.style.transform='';});
+});}
+
+/* ---------- services : explorateur ---------- */
+var ide=$('#ide'),ideTabs=$('#ideTabs'),treeBtns=$$('.ide-tree .tf[data-f]');
+var NAMES={lisezmoi:['LISEZMOI.md','md'],regie:['regie.wl','wl'],mobile:['mobile.ts','ts'],web:['web.php','php'],data:['data.py','py']};
+var openTabs=['lisezmoi'];
+function renderTabs(cur){
+  ideTabs.innerHTML=openTabs.map(function(f){return '<span role="tab" data-t="'+f+'" aria-selected="'+(f===cur)+'" class="'+(f===cur?'on':'')+'" tabindex="0"><i class="ic '+NAMES[f][1]+'"></i>'+NAMES[f][0]+(f==='lisezmoi'?'':'<b title="Fermer" aria-label="Fermer '+NAMES[f][0]+'">×</b>')+'</span>';}).join('');
+}
+function openFile(f){
+  if(!NAMES[f])return;
+  if(openTabs.indexOf(f)<0){openTabs.push(f);if(openTabs.length>5)openTabs.splice(1,1);}
+  $$('.pane',ide).forEach(function(p){p.classList.toggle('on',p.id==='pane-'+f);});
+  treeBtns.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});
+  renderTabs(f);
+}
+treeBtns.forEach(function(b){b.addEventListener('click',function(){openFile(b.getAttribute('data-f'));});});
+$$('[data-open]',ide).forEach(function(b){b.addEventListener('click',function(){openFile(b.getAttribute('data-open'));var top=ide.getBoundingClientRect().top;if(top<60)window.scrollBy({top:top-84,behavior:RM?'auto':'smooth'});});});
+ideTabs.addEventListener('click',function(e){
+  var x=e.target.closest('b'),t=e.target.closest('[data-t]');if(!t)return;var f=t.getAttribute('data-t');
+  if(x){openTabs=openTabs.filter(function(k){return k!==f;});var curOn=$('.pane.on',ide);var cur=curOn?curOn.id.replace('pane-',''):'lisezmoi';openFile(openTabs.indexOf(cur)>=0?cur:openTabs[openTabs.length-1]);}
+  else openFile(f);
+});
+ideTabs.addEventListener('keydown',function(e){var t=e.target.closest('[data-t]');if(!t)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();openFile(t.getAttribute('data-t'));}});
+$('.ide-tree').addEventListener('keydown',function(e){
+  var i=treeBtns.indexOf(document.activeElement);if(i<0)return;
+  if(e.key==='ArrowDown'){e.preventDefault();treeBtns[Math.min(treeBtns.length-1,i+1)].focus();}
+  else if(e.key==='ArrowUp'){e.preventDefault();treeBtns[Math.max(0,i-1)].focus();}
+});
+renderTabs('lisezmoi');
+
+/* ---------- Scansa : téléphones ---------- */
+var phones=$('#phones');
+if(phones){
+  if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){phones.classList.add('in');}});},{threshold:.25}).observe(phones);}
+  setTimeout(function(){phones.classList.add('in');},4000);
+  if(FINE&&!RM){
+    var sc=phones.closest('section');
+    sc.addEventListener('pointermove',function(e){var r=phones.getBoundingClientRect();var x=(e.clientX-(r.left+r.width/2))/r.width,y=(e.clientY-(r.top+r.height/2))/r.height;phones.classList.add('live');phones.style.setProperty('--px',(x*18).toFixed(1)+'px');phones.style.setProperty('--py',(y*14).toFixed(1)+'px');});
+    sc.addEventListener('pointerleave',function(){phones.classList.remove('live');phones.style.removeProperty('--px');phones.style.removeProperty('--py');});
+  }
+}
+
+/* ---------- Scansa : sous le capot ---------- */
+var STEPS=[
+ {h:'OCR par vision',p:'Les pages photographiées passent par un modèle de vision (Groq) qui restitue le texte du document, même sur une photo prise de travers ou un scan de faible qualité. Le PDF et le DOCX sont lus directement.',chips:['Groq Vision','Scanner natif multi-pages','Import PDF, DOCX, images'],lang:'ts',code:"// Texte extrait page par page, puis fusionné\nconst pages = await Promise.all(\n  images.map(img => ocr.vision({ image: img, lang: 'fr' }))\n)\nconst texte = pages.map(p => p.text).join('\\n\\n')"},
+ {h:'Qualification juridique',p:'Le document est typé (bail, état des lieux, congé, mise en demeure, quittance) et découpé en clauses. Chaque clause est reformulée en question juridique hypothétique (stratégie HyDE) pour que la recherche retrouve les bons articles.',chips:['Typage du document','Découpage en clauses','HyDE'],lang:'ts',code:"// HyDE : la clause devient une question de droit\nconst hypothese = await llm.complete({\n  system: 'Vous êtes juriste en droit des baux.',\n  prompt: `Quel article encadre cette clause ? ${clause}`\n})\nconst embedding = await embed(hypothese)"},
+ {h:'Recherche hybride',p:'Chaque clause interroge la base de connaissances juridique (loi 89-462, loi ELAN, Code civil) de deux manières : en vectoriel avec pgvector et en plein texte avec BM25. Les deux classements sont fusionnés par Reciprocal Rank Fusion.',chips:['pgvector','BM25','RRF','Loi 89-462 · ELAN · Code civil'],lang:'sql',code:"-- Fusion RRF des deux classements\nWITH vec AS (\n  SELECT id, row_number() OVER (ORDER BY embedding <=> $1) AS r\n  FROM articles_loi ORDER BY embedding <=> $1 LIMIT 20\n), txt AS (\n  SELECT id, row_number() OVER (ORDER BY ts_rank_cd(tsv, q) DESC) AS r\n  FROM articles_loi, plainto_tsquery('french', $2) q\n  WHERE tsv @@ q ORDER BY r LIMIT 20\n)\nSELECT id, SUM(1.0 / (60 + r)) AS score\nFROM (SELECT * FROM vec UNION ALL SELECT * FROM txt) u\nGROUP BY id ORDER BY score DESC LIMIT 5;"},
+ {h:'Vérification par LLM',p:'Un modèle de langage (Llama via Groq) confronte la clause aux articles retrouvés et rend un verdict motivé : conforme, à surveiller ou réputée non écrite, avec la citation exacte de l’article.',chips:['Llama via Groq','Verdict motivé','Citation de l’article'],lang:'ts',code:"// Verdict structuré, article cité\nconst verdict = await llm.json({\n  prompt: `Clause : ${clause}\\nArticles : ${articles}`,\n  schema: {\n    statut: ['conforme', 'vigilance', 'non_ecrite'],\n    article: 'string', motif: 'string', gravite: 'number'\n  }\n})"},
+ {h:'Score et droits',p:'Le score de conformité pondère chaque clause par sa gravité. Les quotas et les droits d’abonnement sont contrôlés côté serveur, dans les Edge Functions et par Row Level Security, conformément aux règles de l’App Store et de Google Play.',chips:['Score pondéré','Edge Functions','Row Level Security','RevenueCat'],lang:'sql',code:"-- Un utilisateur ne lit que ses propres analyses\nCREATE POLICY analyses_proprietaire ON analyses\n  FOR SELECT USING (auth.uid() = user_id);\n\n-- Quota contrôlé côté serveur, jamais dans l'app\nSELECT plan, analyses_restantes FROM profils\n WHERE id = auth.uid() FOR UPDATE;"}
+];
+var pipe=$('#pipe'),pipeBtns=$$('.pipe-btn',pipe),pipeH=$('#pipe-h'),pipeP=$('#pipe-p'),pipeChips=$('#pipe-chips'),pipeCode=$('#pipe-code'),pipePanel=$('.pipe-panel');
+var step=0,auto=null,paused=false,restart=null,DUR=6000;
+function showStep(i){step=i;var s=STEPS[i];pipeH.textContent=s.h;pipeP.textContent=s.p;pipeChips.innerHTML=s.chips.map(function(c){return '<span class="chip">'+esc(c)+'</span>';}).join('');pipeCode.innerHTML=s.code.split('\n').map(function(l){return html(tok(l,s.lang));}).join('\n');pipeBtns.forEach(function(b,k){b.classList.toggle('on',k===i);b.setAttribute('aria-selected',k===i?'true':'false');b.style.setProperty('--w','0%');});}
+function stopAuto(){if(auto)cancelAnimationFrame(auto);auto=null;}
+function startAuto(){if(RM)return;stopAuto();var t0=null,last=0;function f(t){if(!t0)t0=t;if(paused){t0+=t-last;}last=t;var k=(t-t0)/DUR;pipeBtns[step].style.setProperty('--w',(Math.min(1,k)*100).toFixed(1)+'%');if(k>=1){showStep((step+1)%STEPS.length);t0=null;}auto=requestAnimationFrame(f);}auto=requestAnimationFrame(f);}
+pipeBtns.forEach(function(b,k){b.addEventListener('click',function(){showStep(k);stopAuto();clearTimeout(restart);restart=setTimeout(startAuto,20000);});});
+pipe.addEventListener('pointerenter',function(){paused=true;});pipe.addEventListener('pointerleave',function(){paused=false;});
+pipe.addEventListener('focusin',function(){paused=true;});pipe.addEventListener('focusout',function(){paused=false;});
+showStep(0);
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!auto)startAuto();}else stopAuto();});},{threshold:.2}).observe(pipe);}else startAuto();
+function lockPanel(){var m=0,cur=step;pipePanel.style.minHeight='';STEPS.forEach(function(s,i){showStep(i);m=Math.max(m,pipePanel.offsetHeight);});showStep(cur);pipePanel.style.minHeight=m+'px';}
+var lpT;window.addEventListener('resize',function(){clearTimeout(lpT);lpT=setTimeout(lockPanel,200);});
+if(document.readyState==='complete')lockPanel();else window.addEventListener('load',lockPanel);
+
+/* ---------- parcours : rail épinglé ---------- */
+var railSec=$('#parcours'),railSticky=$('#railSticky'),rail=$('#rail'),railBar=$('#railBar'),railIdx=$('#railIdx'),cards=$$('.rc',rail);
+var pinned=false,railMax=0;
+function railSetup(){
+  var can=window.innerWidth>980&&!RM;
+  rail.style.transform='';railSec.style.height='';
+  if(can){H.classList.add('pin');railMax=Math.max(0,rail.scrollWidth-window.innerWidth);railSec.style.height=(window.innerHeight+railMax+200)+'px';pinned=true;}
+  else{H.classList.remove('pin');pinned=false;}
+  railScroll();
+}
+function railProg(p){railBar.style.setProperty('--p',p.toFixed(3));var idx=Math.min(cards.length,1+Math.round(p*(cards.length-1)));railIdx.textContent=pad2(idx)+' / '+pad2(cards.length);}
+function railScroll(){
+  if(pinned){var r=railSec.getBoundingClientRect();var y=-r.top;var max=railSec.offsetHeight-window.innerHeight;var p=max>0?Math.min(1,Math.max(0,y/max)):0;rail.style.transform='translate3d('+(-p*railMax).toFixed(1)+'px,0,0)';railProg(p);}
+  else{var mx=rail.scrollWidth-rail.clientWidth;railProg(mx>0?rail.scrollLeft/mx:0);}
+}
+rail.addEventListener('scroll',function(){if(!pinned)railScroll();},{passive:true});
+var rsT;window.addEventListener('resize',function(){clearTimeout(rsT);rsT=setTimeout(railSetup,150);});
+if(document.readyState==='complete')railSetup();else window.addEventListener('load',railSetup);
+/* molette horizontale sur le rail quand il n'est pas épinglé */
+rail.addEventListener('wheel',function(e){if(pinned)return;if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;var mx=rail.scrollWidth-rail.clientWidth;if(mx<=0)return;var atStart=rail.scrollLeft<=0&&e.deltaY<0,atEnd=rail.scrollLeft>=mx-1&&e.deltaY>0;if(atStart||atEnd)return;e.preventDefault();rail.scrollLeft+=e.deltaY;},{passive:false});
+
+/* ---------- réalisations : défilement au survol ---------- */
+$$('.frame').forEach(function(f){var img=$('img',f),view=$('.view',f);if(!img)return;
+  f.addEventListener('mouseenter',function(){var d=img.offsetHeight-view.offsetHeight;if(d<=0)return;img.style.transition='transform '+Math.max(3,d/90)+'s linear';img.style.transform='translateY(-'+d+'px)';});
+  f.addEventListener('mouseleave',function(){img.style.transition='transform 1.2s var(--ease)';img.style.transform='translateY(0)';});
+});
+
+/* ---------- bac à sable W-Langage ---------- */
+var PRESETS=[
+"// Contrôle d'un lot de paie\ntSalaires est un tableau de réels = [1850.00, 2240.50, 3120.00, 1980.00]\nnTotal est un réel = 0\nPOUR TOUT rSalaire DE tSalaires\n\tnTotal += rSalaire\nFIN\nTrace(\"Bulletins : \" + TableauOccurrence(tSalaires))\nTrace(\"Total brut : \" + NumériqueVersChaîne(nTotal, \".2f\") + \" €\")\nTrace(\"Moyenne : \" + NumériqueVersChaîne(nTotal / TableauOccurrence(tSalaires), \".2f\") + \" €\")\nSI nTotal > 9000 ALORS\n\tTrace(\"⚠ Lot au-dessus du seuil de contrôle\")\nSINON\n\tTrace(\"Lot validé\")\nFIN",
+"// Migration HFSQL vers SQL Server, par lots\nPROCÉDURE INTERNE NbLots(nEnreg, nTaille)\n\tRENVOYER Tronque((nEnreg + nTaille - 1) / nTaille)\nFIN\nnDossiers est un entier = 12480\nnLot est un entier = 500\nTrace(\"Dossiers à migrer : \" + nDossiers)\nTrace(\"Lots de \" + nLot + \" : \" + NbLots(nDossiers, nLot))\nPOUR i = 1 _À_ 3\n\tTrace(\"Lot \" + NumériqueVersChaîne(i, \"02d\") + \" migré\")\nFIN\nTrace(\"Reste : \" + (NbLots(nDossiers, nLot) - 3) + \" lots\")",
+"// Suivi d'un lot de dossiers\ntStatuts est un tableau de chaînes = [\"validé\", \"en attente\", \"validé\", \"rejeté\", \"validé\"]\nnOK est un entier\nnAttente est un entier\nPOUR TOUT sStatut DE tStatuts\n\tSI sStatut ~= \"VALIDÉ\" ALORS\n\t\tnOK++\n\tSINON SI sStatut = \"en attente\" ALORS\n\t\tnAttente++\n\tFIN\nFIN\nTrace(Complète(\"Statut\", 12) + \"Nombre\")\nTrace(Complète(\"validé\", 12) + nOK)\nTrace(Complète(\"en attente\", 12) + nAttente)\nTrace(Complète(\"rejeté\", 12) + (Taille(tStatuts) - nOK - nAttente))\nTrace(\"Taux de validation : \" + Arrondi(nOK * 100 / Taille(tStatuts), 1) + \" %\")"
+];
+var src=$('#src'),hl=$('#hl'),out=$('#out'),outMeta=$('#outMeta'),runBtn=$('#run'),presetBtns=$$('.presets button');
+function paint(){var lines=src.value.split('\n');hl.innerHTML=lines.map(function(l){return '<span class="l">'+(html(tok(l,'wl'))||' ')+'</span>';}).join('');hl.scrollTop=src.scrollTop;hl.scrollLeft=src.scrollLeft;}
+function loadPreset(i){src.value=PRESETS[i];presetBtns.forEach(function(b,k){b.classList.toggle('on',k===i);});paint();out.innerHTML='<span class="ol hint">// Exécutez le programme pour voir la Trace.</span>';outMeta.textContent='prêt';}
+src.addEventListener('input',function(){paint();presetBtns.forEach(function(b){b.classList.remove('on');});});
+src.addEventListener('scroll',function(){hl.scrollTop=src.scrollTop;hl.scrollLeft=src.scrollLeft;});
+src.addEventListener('keydown',function(e){
+  if(e.key==='Tab'){e.preventDefault();var s=src.selectionStart,en=src.selectionEnd;src.value=src.value.slice(0,s)+'\t'+src.value.slice(en);src.selectionStart=src.selectionEnd=s+1;paint();}
+  if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();run();}
+});
+function run(){
+  if(typeof window.wlRun!=='function'){out.innerHTML='<span class="ol err">Interpréteur non chargé. Rechargez la page.</span>';return;}
+  var t0=performance.now(),r;
+  try{r=window.wlRun(src.value);}catch(e){r={out:[],err:String(e&&e.message||e),steps:0};}
+  var ms=performance.now()-t0,lines=r.out||[];
+  out.innerHTML='';
+  if(!lines.length&&!r.err)lines=[];
+  lines.forEach(function(l,i){var s=document.createElement('span');s.className='ol';s.textContent=l;s.style.animationDelay=(RM?0:i*40)+'ms';out.appendChild(s);});
+  if(r.err){var e=document.createElement('span');e.className='ol err';e.textContent=r.err;e.style.animationDelay=(RM?0:lines.length*40)+'ms';out.appendChild(e);}
+  else if(!lines.length){var h=document.createElement('span');h.className='ol hint';h.textContent='// Aucune Trace. Ajoutez Trace(...) pour afficher une valeur.';out.appendChild(h);}
+  else{var k=document.createElement('span');k.className='ol okl';k.textContent='// Fin d’exécution';k.style.animationDelay=(RM?0:lines.length*40+80)+'ms';out.appendChild(k);}
+  outMeta.textContent=(r.err?'erreur · ':'')+lines.length+(lines.length>1?' lignes':' ligne')+' · '+(r.steps||0)+' pas · '+(ms<1?'<1':Math.round(ms))+' ms';
+}
+runBtn.addEventListener('click',run);
+presetBtns.forEach(function(b,k){b.addEventListener('click',function(){loadPreset(k);});});
+loadPreset(0);
+if(!/Mac|iPhone|iPad/.test(navigator.platform||'')){var kb=$('.play-act .kbd');if(kb)kb.textContent='Ctrl ↵';var kk=$('#palBtn kbd');if(kk)kk.textContent='Ctrl K';}
+
+/* ---------- stack : filtres + recherche ---------- */
+var techs=$$('#techs .tech'),filtres=$$('#filtres .filtre'),q=$('#q'),stackEmpty=$('#stackEmpty'),curF='all';
+var counts={all:techs.length};
+techs.forEach(function(t){t.setAttribute('data-name',t.textContent.trim());(t.getAttribute('data-cat')||'').split(/\s+/).forEach(function(c){if(c)counts[c]=(counts[c]||0)+1;});});
+Object.keys(counts).forEach(function(c){var n=$('#n-'+c);if(n)n.textContent=counts[c];});
+function applyStack(){
+  var needle=nfd(q.value.trim()),shown=0;
+  techs.forEach(function(t){var name=t.getAttribute('data-name');var okF=curF==='all'||(' '+t.getAttribute('data-cat')+' ').indexOf(' '+curF+' ')>=0;var okQ=!needle||nfd(name).indexOf(needle)>=0;var ok=okF&&okQ;t.classList.toggle('hide',!ok);if(ok)shown++;
+    var i=t.querySelector('i');var label=esc(name);
+    if(ok&&needle){var pos=nfd(name).indexOf(needle);label=esc(name.slice(0,pos))+'<mark>'+esc(name.slice(pos,pos+needle.length))+'</mark>'+esc(name.slice(pos+needle.length));}
+    t.innerHTML=(i?i.outerHTML:'')+label;});
+  stackEmpty.classList.toggle('show',shown===0);
+}
+filtres.forEach(function(f){f.addEventListener('click',function(){curF=f.getAttribute('data-f');filtres.forEach(function(x){x.classList.toggle('on',x===f);});applyStack();});});
+q.addEventListener('input',applyStack);
+q.addEventListener('keydown',function(e){if(e.key==='Escape'){q.value='';applyStack();q.blur();}});
+document.addEventListener('keydown',function(e){if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();q.focus();q.scrollIntoView({block:'center',behavior:RM?'auto':'smooth'});}});
+
+/* ---------- contact : générateur de brief ---------- */
+var brief=$('#brief'),bpre=$('#bpre'),openMail=$('#openMail'),copyBrief=$('#copyBrief'),formMsg=$('#formMsg');
+var F={nom:$('#f-nom'),soc:$('#f-soc'),mail:$('#f-mail'),tech:$('#f-tech'),msg:$('#f-msg')};
+function sel(g){var b=$('.opt.on[data-g="'+g+'"]',brief);return b?b.getAttribute('data-v'):'';}
+function briefText(){
+  var L=[];
+  L.push('// Brief envoyé depuis zingitech.fr');
+  L.push('Besoin      : '+sel('besoin'));
+  L.push('Format      : '+sel('format'));
+  L.push('Durée       : '+sel('duree'));
+  L.push('Lieu        : '+sel('lieu'));
+  L.push('Démarrage   : '+sel('demarrage'));
+  L.push('');
+  L.push('Contact     : '+(F.nom.value.trim()||'…'));
+  L.push('Société     : '+(F.soc.value.trim()||'…'));
+  L.push('E-mail      : '+(F.mail.value.trim()||'…'));
+  L.push('Technos     : '+(F.tech.value.trim()||'à préciser'));
+  L.push('');
+  L.push('Contexte    :');
+  L.push(F.msg.value.trim()||'…');
+  return L.join('\n');
+}
+function renderBrief(){
+  var t=briefText();
+  bpre.innerHTML=t.split('\n').map(function(l){
+    if(/^\/\//.test(l))return '<span class="cm">'+esc(l)+'</span>';
+    var m=l.match(/^([A-Za-zÀ-ÿ\-]+\s*):(.*)$/);
+    if(m){var v=m[2].trim();return '<span class="key">'+esc(m[1])+'</span>:'+(v===''?'':v==='…'?' <span class="dim">…</span>':' <span class="val">'+esc(v)+'</span>');}
+    return l==='…'?'<span class="dim">…</span>':esc(l);
+  }).join('\n');
+  var subj='['+sel('besoin')+'] '+(F.soc.value.trim()||F.nom.value.trim()||'Nouveau brief');
+  openMail.setAttribute('href','mailto:contact@zingitech.fr?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(t));
+}
+$$('.opt',brief).forEach(function(b){b.addEventListener('click',function(){var g=b.getAttribute('data-g');$$('.opt[data-g="'+g+'"]',brief).forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false');});renderBrief();});});
+Object.keys(F).forEach(function(k){F[k].addEventListener('input',renderBrief);});
+brief.addEventListener('submit',function(e){e.preventDefault();openMail.click();});
+openMail.addEventListener('click',function(){formMsg.textContent='Votre messagerie s’ouvre avec le brief prérempli. Si rien ne se passe, copiez-le et écrivez à contact@zingitech.fr.';});
+copyBrief.addEventListener('click',function(){copyText(briefText(),copyBrief);});
+$('#copyMail').addEventListener('click',function(){copyText('contact@zingitech.fr',$('#copyMail'));});
+renderBrief();
+
+/* ---------- palette ⌘K ---------- */
+var pal=$('#pal'),palq=$('#palq'),pallist=$('#pallist'),palEmpty=$('#palEmpty'),palBtn=$('#palBtn');
+var ITEMS=[
+ {t:'Accueil',g:'section',ic:'md',go:'#accueil'},
+ {t:'Services : régie, mobile, web, data',g:'section',ic:'wl',go:'#services'},
+ {t:'Scansa, l’application',g:'section',ic:'ts',go:'#scansa'},
+ {t:'Parcours : six ans, trois environnements',g:'section',ic:'wl',go:'#parcours'},
+ {t:'Réalisations clients',g:'section',ic:'php',go:'#realisations'},
+ {t:'Bac à sable W-Langage',g:'section',ic:'wl',go:'#bac'},
+ {t:'Compétences techniques',g:'section',ic:'py',go:'#stack'},
+ {t:'À propos de ZingiTech',g:'section',ic:'md',go:'#apropos'},
+ {t:'Contact et brief',g:'section',ic:'txt',go:'#contact'},
+ {t:'Copier l’adresse e-mail',g:'action',ic:'txt',act:function(){copyText('contact@zingitech.fr');palMsg('Adresse copiée.');}},
+ {t:'Lancer le bac à sable',g:'action',ic:'wl',act:function(){goTo('#bac');setTimeout(run,600);}},
+ {t:'Scansa sur l’App Store',g:'lien',ic:'ts',href:'https://apps.apple.com/fr/app/id6758580692'},
+ {t:'Scansa sur Google Play',g:'lien',ic:'ts',href:'https://play.google.com/store/apps/details?id=com.zingila.leaselens'},
+ {t:'scansa.fr',g:'lien',ic:'ts',href:'https://scansa.fr'},
+ {t:'Haut de page',g:'action',ic:'md',act:function(){window.scrollTo({top:0,behavior:RM?'auto':'smooth'});}},
+ {t:'Mentions légales',g:'lien',ic:'txt',href:'mentions.html',same:true}
+];
+var palIdx=0,palShown=ITEMS;
+function goTo(h){var el=$(h);if(!el)return;closeMenu();el.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});}
+function palMsg(t){palEmpty.hidden=false;palEmpty.textContent=t;pallist.innerHTML='';setTimeout(closePal,700);}
+function renderPal(){
+  var needle=nfd(palq.value.trim());
+  palShown=ITEMS.filter(function(it){if(!needle)return true;var hay=nfd(it.t+' '+it.g);var k=0;for(var i=0;i<hay.length&&k<needle.length;i++){if(hay[i]===needle[k])k++;}return k===needle.length;});
+  palIdx=Math.min(palIdx,Math.max(0,palShown.length-1));
+  pallist.innerHTML=palShown.map(function(it,i){return '<li role="option" aria-selected="'+(i===palIdx)+'" class="'+(i===palIdx?'on':'')+'" data-i="'+i+'"><i class="ic '+it.ic+'"></i><span class="t">'+esc(it.t)+'</span><span class="g">'+it.g+'</span></li>';}).join('');
+  palEmpty.hidden=palShown.length>0;palEmpty.textContent='Rien ne correspond.';
+}
+function openPal(){pal.hidden=false;pal.classList.add('open');palq.value='';palIdx=0;renderPal();H.classList.add('lock');setTimeout(function(){palq.focus();},30);}
+function closePal(){pal.classList.remove('open');pal.hidden=true;H.classList.remove('lock');}
+function palGo(i){var it=palShown[i];if(!it)return;closePal();if(it.go)goTo(it.go);else if(it.act)it.act();else if(it.href){if(it.same)location.href=it.href;else window.open(it.href,'_blank','noopener');}}
+palBtn.addEventListener('click',openPal);
+palq.addEventListener('input',function(){palIdx=0;renderPal();});
+palq.addEventListener('keydown',function(e){
+  if(e.key==='ArrowDown'){e.preventDefault();palIdx=(palIdx+1)%Math.max(1,palShown.length);renderPal();}
+  else if(e.key==='ArrowUp'){e.preventDefault();palIdx=(palIdx-1+palShown.length)%Math.max(1,palShown.length);renderPal();}
+  else if(e.key==='Enter'){e.preventDefault();palGo(palIdx);}
+  else if(e.key==='Escape'){e.preventDefault();closePal();}
+});
+pallist.addEventListener('click',function(e){var li=e.target.closest('li');if(li)palGo(parseInt(li.getAttribute('data-i'),10));});
+pallist.addEventListener('mousemove',function(e){var li=e.target.closest('li');if(li){var i=parseInt(li.getAttribute('data-i'),10);if(i!==palIdx){palIdx=i;renderPal();}}});
+pal.addEventListener('click',function(e){if(e.target===pal)closePal();});
+document.addEventListener('keydown',function(e){
+  if((e.metaKey||e.ctrlKey)&&(e.key==='k'||e.key==='K')){e.preventDefault();if(pal.classList.contains('open'))closePal();else openPal();}
+  else if(e.key==='Escape'){if(pal.classList.contains('open'))closePal();else if(menu.classList.contains('open'))closeMenu();}
+});
+
+onScroll();
+})();
+</script>
+
+<script>
+/* Bandeau d'un hébergeur de prévisualisation (tiiny.host…) : on mesure sa hauteur et on relève nos éléments fixés d'autant. Vaut 0 ailleurs. */
+(function(){
+  var nous={nav:1,prog:1,status:1,toTop:1};
+  function candidats(){
+    var out=[],k=document.body.children,i,j;
+    for(i=0;i<k.length;i++){out.push(k[i]);for(j=0;j<k[i].children.length&&j<12;j++)out.push(k[i].children[j]);}
+    return out;
+  }
+  function mesure(){
+    var h=0,els=candidats(),i;
+    for(i=0;i<els.length;i++){var e=els[i];if(nous[e.id]||e.tagName==='SCRIPT'||e.tagName==='STYLE')continue;
+      var cs=getComputedStyle(e);if(cs.position!=='fixed'||cs.display==='none'||cs.visibility==='hidden')continue;
+      var r=e.getBoundingClientRect();
+      if(r.height>0&&r.height<160&&r.width>=innerWidth*.6&&Math.abs(r.bottom-innerHeight)<3)h=Math.max(h,r.height);}
+    document.documentElement.style.setProperty('--hostbar',Math.round(h)+'px');
+  }
+  mesure();[500,1500,3500].forEach(function(t){setTimeout(mesure,t)});
+  addEventListener('resize',mesure);
+  if(window.MutationObserver){var t;new MutationObserver(function(){clearTimeout(t);t=setTimeout(mesure,120)}).observe(document.body,{childList:true});}
+})();
+</script>
+</body>
+</html>
