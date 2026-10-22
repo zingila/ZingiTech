@@ -380,24 +380,29 @@ html.pin .rail{width:max-content;overflow:visible;scroll-snap-type:none;padding-
 
 /* ---------- réalisations ---------- */
 .real-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px}
-.real{display:flex;flex-direction:column;gap:22px}
-.frame{border-radius:14px;overflow:hidden;background:#0f0f12;border:1px solid var(--ligne-s);box-shadow:0 30px 60px -30px rgba(0,0,0,.5);display:block}
-.frame .bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px;border-bottom:1px solid var(--ligne-n);background:#141417}
-.frame .bar i{width:9px;height:9px;border-radius:50%;background:#3a3a40;display:block}
-.frame .bar span{margin-left:12px;flex:1;height:18px;border-radius:5px;background:#1d1d21;font:400 11px/18px var(--mono);color:#9a9aa0;padding:0 10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.frame .view{height:clamp(220px,24vw,380px);overflow:hidden;position:relative;background:#fff}
-.frame .view img{width:100%;height:auto;will-change:transform}
-.frame .view::after{content:"Défilez pour parcourir";position:absolute;right:12px;bottom:10px;font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(10,10,11,.75);color:#fff;padding:6px 9px;border-radius:6px;transition:opacity .4s}
-.real h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.025em;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.real h3 small{font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
-.real p{color:var(--gris);font-size:15.5px;max-width:58ch}
-.real .liens{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.real .liens .note{font:400 12.5px var(--mono);color:var(--gris-2)}
+.ecom{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(40px,5vw,80px);align-items:start}
+.ecom h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.025em;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ecom h3 small{font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2)}
+.ecom-txt>p{color:var(--gris);font-size:15.5px;max-width:58ch;margin-top:18px}
+.ecom-steps{list-style:none;margin:28px 0 24px;border-top:1px solid var(--ligne-s)}
+.ecom-steps li{display:grid;grid-template-columns:44px minmax(0,132px) minmax(0,1fr);gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--ligne-s);font-size:15px;line-height:1.5;color:var(--gris)}
+.ecom-steps b{font:500 12px/1.9 var(--mono);color:#1f8a52}
+.ecom-steps strong{color:var(--encre);font-weight:600}
+@media (max-width:600px){.ecom-steps li{grid-template-columns:36px minmax(0,1fr)}.ecom-steps li span{grid-column:2}}
+.ecom .liens{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:26px}
+.rec ul{list-style:none;padding:18px 20px;display:grid;gap:10px;font:400 13px/1.55 var(--mono);color:#e6e6ea}
+.rec li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px}
+.rec .cb{color:#8b8f99;white-space:pre}
+.rec .cb i{font-style:normal;color:var(--vert);display:inline-block;transition:opacity .25s,transform .4s var(--ease);transition-delay:calc(.5s + var(--d,0)*.14s)}
+html.js .ecom:not(.in) .rec .cb i{opacity:0;transform:scale(.3)}
+html.noanim .rec .cb i{opacity:1!important;transform:none!important}
+.rec-foot{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;padding:11px 20px;border-top:1px solid var(--ligne-n);font:400 12px var(--mono);color:#9a9aa0}
+.rec-foot em{font-style:normal;color:var(--vert)}
 .real-data{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px;align-items:start;padding-top:40px;border-top:1px solid var(--ligne-s);margin-top:10px}
 .real-data h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.025em}
 .real-data h3 small{display:block;font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gris-2);margin-bottom:12px}
 .real-data p{color:var(--gris);font-size:15.5px;max-width:58ch}
-@media (max-width:980px){.real-grid,.real-data{grid-template-columns:1fr}.frame .view::after{content:"Capture d'écran"}}
+@media (max-width:980px){.real-grid,.ecom,.real-data{grid-template-columns:1fr}}
 
 /* ---------- bac à sable ---------- */
 .play-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px 64px;align-items:end}
@@ -922,29 +927,38 @@ with DAG("reporting_quotidien", schedule="0 6 * * *", catchup=False) as dag:
   <div class="chev" aria-hidden="true"></div>
   <div class="wrap sec">
     <div class="sec-head rv">
-      <div><p class="lbl">// 04 · réalisations clients</p><h2 class="h2 sw">Des boutiques qui vendent, des outils qui tournent.</h2></div>
-      <p>Deux boutiques en ligne réalisées pour des artisans, et un projet data mené de la base de données jusqu'à l'API de prédiction.</p>
+      <div><p class="lbl">// 04 · réalisations</p><h2 class="h2 sw">Des boutiques qui vendent, des outils qui tournent.</h2></div>
+      <p>Des boutiques en ligne menées de bout en bout pour des artisans et des créateurs, et un projet data mené de la base de données jusqu'à l'API de prédiction.</p>
     </div>
     <div class="real-grid">
-      <article class="real rv">
-        <a class="frame" href="https://diysoul.com" target="_blank" rel="noopener" aria-label="Ouvrir diysoul.com dans un nouvel onglet">
-          <div class="bar"><i></i><i></i><i></i><span>diysoul.com</span></div>
-          <div class="view"><img src="assets/diysoul.jpg" width="800" height="1120" loading="lazy" decoding="async" alt="Page d'accueil de la boutique DIY Soul"></div>
-        </a>
-        <h3>DIY Soul <small>E-commerce · créations personnalisées</small></h3>
-        <p>Marque d'artisanat moderne : résine époxy, porte-clés, dominos, plateaux, décorations et créations sur mesure. Boutique WordPress, WooCommerce et Elementor avec catalogue par catégories, produits personnalisables, commande sur mesure, comptes clients, newsletter, page de prestations événementielles et lecteur radio intégré.</p>
-        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span><span class="tag">Personnalisation produit</span></div>
-        <div class="liens"><a class="btn btn-ghost" href="https://diysoul.com" target="_blank" rel="noopener">Voir la boutique</a></div>
-      </article>
-      <article class="real rv">
-        <div class="frame">
-          <div class="bar"><i></i><i></i><i></i><span>atelier-dart.fr</span></div>
-          <div class="view"><img src="assets/atelier-dart.jpg" width="1000" height="1528" loading="lazy" decoding="async" alt="Page d'accueil de la boutique Atelier d'Art"></div>
+      <article class="ecom rv">
+        <div class="ecom-txt">
+          <h3>Boutiques en ligne <small>E-commerce · WooCommerce</small></h3>
+          <p>Plusieurs boutiques WooCommerce conçues, développées et mises en ligne pour des marques d'artisanat et de personnalisation. Des boutiques pensées pour vendre, que l'équipe administre ensuite elle-même au quotidien : catalogue, commandes, contenus.</p>
+          <ol class="ecom-steps">
+            <li><b>01</b><strong>Cadrage</strong><span>Catalogue, parcours d'achat, paiement et livraison</span></li>
+            <li><b>02</b><strong>Maquette</strong><span>Identité de la marque, pages clés validées avant le développement</span></li>
+            <li><b>03</b><strong>Développement</strong><span>WooCommerce, personnalisation produit, intégration des contenus</span></li>
+            <li><b>04</b><strong>Recette</strong><span>Commandes de test, paiements, e-mails, affichage mobile</span></li>
+            <li><b>05</b><strong>Mise en ligne</strong><span>Prise en main par l'équipe, sauvegardes et suivi</span></li>
+          </ol>
+          <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span><span class="tag">PHP</span><span class="tag">Personnalisation produit</span></div>
+          <div class="liens"><a class="btn btn-plein" href="#contact" data-besoin="Site web ou e-commerce">Parlons de votre boutique</a></div>
         </div>
-        <h3>Atelier d'Art <small>E-commerce · textile et objets personnalisables</small></h3>
-        <p>Atelier de personnalisation textile, broderie, peluches et mugs installé à Compiègne. Boutique WordPress, WooCommerce et Elementor : personnalisation en ligne avec import du design du client, mise en avant des meilleures ventes, newsletter, retrait en atelier ou livraison.</p>
-        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Elementor</span><span class="tag">Import de design</span></div>
-        <div class="liens"><span class="note">Site en cours de finalisation chez le client</span></div>
+        <figure class="codecard rec" aria-label="Liste de recette d'une boutique en ligne">
+          <figcaption><span><span class="dots"><i></i><i></i><i></i></span>recette-boutique.md</span><span>WooCommerce</span></figcaption>
+          <ul>
+            <li style="--d:0"><span class="cb">- [<i>x</i>]</span><span>Catalogue organisé par catégories et fiches produits</span></li>
+            <li style="--d:1"><span class="cb">- [<i>x</i>]</span><span>Produits personnalisables : texte, options, import de design</span></li>
+            <li style="--d:2"><span class="cb">- [<i>x</i>]</span><span>Commande sur mesure</span></li>
+            <li style="--d:3"><span class="cb">- [<i>x</i>]</span><span>Paiement en ligne sécurisé</span></li>
+            <li style="--d:4"><span class="cb">- [<i>x</i>]</span><span>Livraison ou retrait sur place</span></li>
+            <li style="--d:5"><span class="cb">- [<i>x</i>]</span><span>Comptes clients et suivi des commandes</span></li>
+            <li style="--d:6"><span class="cb">- [<i>x</i>]</span><span>Newsletter et mise en avant des meilleures ventes</span></li>
+            <li style="--d:7"><span class="cb">- [<i>x</i>]</span><span>Mise en ligne, sauvegardes, formation à l'administration</span></li>
+          </ul>
+          <div class="rec-foot"><span><em>8 / 8</em> validés</span><span>prêt pour la mise en ligne</span></div>
+        </figure>
       </article>
       <article class="real-data rv">
         <div><h3><small>Projet data · formation, finalisé en juin 2019</small>API de prédiction d'attrition</h3></div>
@@ -1557,12 +1571,6 @@ if(document.readyState==='complete')railSetup();else window.addEventListener('lo
 /* molette horizontale sur le rail quand il n'est pas épinglé */
 rail.addEventListener('wheel',function(e){if(pinned)return;if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;var mx=rail.scrollWidth-rail.clientWidth;if(mx<=0)return;var atStart=rail.scrollLeft<=0&&e.deltaY<0,atEnd=rail.scrollLeft>=mx-1&&e.deltaY>0;if(atStart||atEnd)return;e.preventDefault();rail.scrollLeft+=e.deltaY;},{passive:false});
 
-/* ---------- réalisations : défilement au survol ---------- */
-$$('.frame').forEach(function(f){var img=$('img',f),view=$('.view',f);if(!img)return;
-  f.addEventListener('mouseenter',function(){var d=img.offsetHeight-view.offsetHeight;if(d<=0)return;img.style.transition='transform '+Math.max(3,d/90)+'s linear';img.style.transform='translateY(-'+d+'px)';});
-  f.addEventListener('mouseleave',function(){img.style.transition='transform 1.2s var(--ease)';img.style.transform='translateY(0)';});
-});
-
 /* ---------- bac à sable W-Langage ---------- */
 var PRESETS=[
 "// Contrôle d'un lot de paie\ntSalaires est un tableau de réels = [1850.00, 2240.50, 3120.00, 1980.00]\nnTotal est un réel = 0\nPOUR TOUT rSalaire DE tSalaires\n\tnTotal += rSalaire\nFIN\nTrace(\"Bulletins : \" + TableauOccurrence(tSalaires))\nTrace(\"Total brut : \" + NumériqueVersChaîne(nTotal, \".2f\") + \" €\")\nTrace(\"Moyenne : \" + NumériqueVersChaîne(nTotal / TableauOccurrence(tSalaires), \".2f\") + \" €\")\nSI nTotal > 9000 ALORS\n\tTrace(\"⚠ Lot au-dessus du seuil de contrôle\")\nSINON\n\tTrace(\"Lot validé\")\nFIN",
@@ -1654,6 +1662,8 @@ openMail.addEventListener('click',function(){formMsg.textContent='Votre messager
 copyBrief.addEventListener('click',function(){copyText(briefText(),copyBrief);});
 $('#copyMail').addEventListener('click',function(){copyText('contact@zingitech.fr',$('#copyMail'));});
 renderBrief();
+/* liens qui présélectionnent le besoin du brief (ex. « Parlons de votre boutique ») */
+$$('[data-besoin]').forEach(function(a){a.addEventListener('click',function(){var o=$('.opt[data-g="besoin"][data-v="'+a.getAttribute('data-besoin')+'"]',brief);if(o)o.click();});});
 
 /* ---------- palette ⌘K ---------- */
 var pal=$('#pal'),palq=$('#palq'),pallist=$('#pallist'),palEmpty=$('#palEmpty'),palBtn=$('#palBtn');
@@ -1662,7 +1672,7 @@ var ITEMS=[
  {t:'Services : régie, mobile, web, data',g:'section',ic:'wl',go:'#services'},
  {t:'Scansa, l’application',g:'section',ic:'ts',go:'#scansa'},
  {t:'Parcours : six ans, trois environnements',g:'section',ic:'wl',go:'#parcours'},
- {t:'Réalisations clients',g:'section',ic:'php',go:'#realisations'},
+ {t:'Réalisations : e-commerce et data',g:'section',ic:'php',go:'#realisations'},
  {t:'Bac à sable W-Langage',g:'section',ic:'wl',go:'#bac'},
  {t:'Compétences techniques',g:'section',ic:'py',go:'#stack'},
  {t:'À propos de ZingiTech',g:'section',ic:'md',go:'#apropos'},
