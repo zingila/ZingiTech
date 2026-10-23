@@ -9,3 +9,6 @@ Context.md
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Signature e-mail : outil local, seul le logo (assets/mail) est publié
+signature/
